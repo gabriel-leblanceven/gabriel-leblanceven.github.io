@@ -101,4 +101,14 @@ $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
-   
+
+// ===== PERSONNALISATION =====
+$primary-color: #324f6b;
+
+.masthead {
+  border-bottom: 2px solid #324f6b !important;
+}
+
+body {
+  background-color: pink !important;
+}
