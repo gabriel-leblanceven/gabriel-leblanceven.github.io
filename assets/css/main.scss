@@ -1,43 +1,376 @@
----
----
+/* ============================================================
+   PERSONNALISATION ACADEMIC PAGES
+   Style inspiré de Raj Chetty / Melissa Dell
+   
+   PALETTE :
+   - Bleu principal : #324f6b
+   - Ocre accent    : #c8921a
+   - Fond           : #ffffff
+   - Texte          : #333333
+   
+   POLICE : Inter (Google Fonts)
+   
+   INSTRUCTIONS :
+   1. Ouvrez le fichier assets/css/main.scss dans votre dépôt
+   2. Collez ce contenu AU DÉBUT du fichier, avant toute autre ligne
+   3. Committez → votre site se met à jour en 2-3 minutes
+   ============================================================ */
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+/* --- 1. IMPORT POLICE INTER --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
-@import
-    "vendor/breakpoint/breakpoint",
+/* --- 2. VARIABLES DE COULEUR --- */
+:root {
+  --color-blue:       #324f6b;   /* couleur principale */
+  --color-blue-dark:  #263e56;   /* hover boutons */
+  --color-blue-light: #42658a;   /* éléments secondaires */
+  --color-ochre:      #c8921a;   /* accent ocre doré */
+  --color-ochre-bg:   #fdf9f2;   /* fond léger ocre */
+  --color-ochre-pale: #fdf6e3;   /* fond très léger ocre */
+  --color-border:     #e8e0d4;   /* séparateurs */
+  --color-text:       #333333;   /* texte principal */
+  --color-text-light: #888888;   /* texte secondaire */
+  --color-white:      #ffffff;
+}
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+/* --- 3. POLICE GLOBALE --- */
+body,
+.page__content,
+.page__title,
+.nav__title,
+.greedy-nav a,
+.greedy-nav .visible-links a,
+p, li, h1, h2, h3, h4 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
 
-    "include/mixins",
-    "vendor/susy/susy",
+/* --- 4. NAVIGATION COMPACTE (style Chetty) --- */
 
-    "layout/reset",
-    "layout/base",
+/* Barre de navigation */
+.masthead {
+  background: var(--color-white) !important;
+  border-bottom: 1.5px solid var(--color-blue) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-height: 48px !important;
+}
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+.masthead__inner-wrap {
+  padding: 0 24px !important;
+  min-height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+}
 
-    "layout/forms",
+/* Nom dans la nav (logo) */
+.site-title,
+.masthead .site-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--color-blue) !important;
+  letter-spacing: 0.02em !important;
+  text-decoration: none !important;
+}
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+.site-title:hover {
+  color: var(--color-ochre) !important;
+  text-decoration: none !important;
+}
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+/* Liens de navigation */
+.greedy-nav a,
+.greedy-nav .visible-links a {
+  font-size: 12px !important;
+  color: var(--color-blue) !important;
+  font-weight: 400 !important;
+  opacity: 0.6 !important;
+  letter-spacing: 0.02em !important;
+  padding: 0 14px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: opacity 0.15s !important;
+  border-bottom: none !important;
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+/* Onglet actif → barre ocre */
+.greedy-nav .visible-links a.active,
+.greedy-nav .visible-links a[aria-current="page"] {
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  border-bottom: 2px solid var(--color-ochre) !important;
+  margin-bottom: -1.5px !important;
+}
+
+/* Supprimer le soulignement rouge par défaut */
+.greedy-nav .visible-links a:before {
+  display: none !important;
+}
+
+/* --- 5. PAGE PRINCIPALE --- */
+
+/* Supprimer la sidebar gauche par défaut */
+.sidebar.sticky {
+  display: none !important;
+}
+
+/* Contenu pleine largeur */
+#main {
+  max-width: 780px !important;
+  margin: 0 auto !important;
+  padding: 36px 28px !important;
+  float: none !important;
+  width: 100% !important;
+}
+
+.page {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* --- 6. PAGE D'ACCUEIL : photo gauche + bio droite --- */
+
+/* Conteneur principal de la home */
+.author__avatar {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  border: 3px solid var(--color-ochre) !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1) !important;
+  float: left !important;
+  margin: 0 32px 24px 0 !important;
+}
+
+.author__avatar img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  border: none !important;
+}
+
+/* Nom sur la home */
+.author__name,
+h3.author__name {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: var(--color-blue) !important;
+  margin-bottom: 4px !important;
+}
+
+/* Titre/institution */
+.author__bio {
+  font-size: 12px !important;
+  color: var(--color-text-light) !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 14px !important;
+}
+
+/* Liens contact (email, Scholar, GitHub) */
+.author__urls a {
+  font-size: 12px !important;
+  color: var(--color-ochre) !important;
+  text-decoration: none !important;
+}
+
+.author__urls a:hover {
+  text-decoration: underline !important;
+}
+
+/* --- 7. TYPOGRAPHIE DU CONTENU --- */
+
+.page__content p {
+  font-size: 13.5px !important;
+  line-height: 1.85 !important;
+  color: var(--color-text) !important;
+  margin-bottom: 10px !important;
+}
+
+/* Titres de section (À PROPOS, RECHERCHE...) */
+.page__content h2 {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--color-blue) !important;
+  margin-top: 28px !important;
+  margin-bottom: 14px !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+/* Titres de publications / cours */
+.page__content h3 {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--color-blue) !important;
+  margin-bottom: 3px !important;
+  line-height: 1.4 !important;
+}
+
+/* Séparateurs */
+.page__content hr {
+  border: none !important;
+  border-top: 0.5px solid var(--color-border) !important;
+  margin: 20px 0 !important;
+}
+
+/* --- 8. PUBLICATIONS --- */
+
+/* Années en ocre */
+.page__content .pub-year,
+.page__content time {
+  color: var(--color-ochre) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+/* Bloc publication avec filet ocre */
+.page__content .archive__item,
+.page__content .list__item {
+  border-left: 2px solid var(--color-ochre) !important;
+  padding-left: 14px !important;
+  margin-bottom: 14px !important;
+}
+
+/* Meta (revue, statut) */
+.page__content .page__meta,
+.page__content .archive__item-excerpt {
+  font-size: 12px !important;
+  color: var(--color-text-light) !important;
+  font-style: italic !important;
+}
+
+/* Tag "En cours" / "Working paper" */
+.page__content .label,
+.page__content .badge {
+  display: inline-block !important;
+  font-size: 10px !important;
+  padding: 2px 7px !important;
+  border-radius: 3px !important;
+  background: var(--color-ochre-pale) !important;
+  color: #a87820 !important;
+  border: 0.5px solid #e8c87a !important;
+  font-style: normal !important;
+  margin-left: 6px !important;
+}
+
+/* --- 9. ENSEIGNEMENT : filet ocre à gauche --- */
+.page__content .teaching-item,
+.page__content blockquote {
+  padding: 12px 14px !important;
+  border-left: 2px solid var(--color-ochre) !important;
+  background: var(--color-ochre-bg) !important;
+  border-radius: 0 4px 4px 0 !important;
+  margin-bottom: 10px !important;
+  font-style: normal !important;
+}
+
+/* --- 10. BOUTONS --- */
+
+/* Bouton CV principal */
+.btn,
+.btn--primary,
+a.btn {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border: 1.5px solid var(--color-blue) !important;
+  color: var(--color-blue) !important;
+  background: transparent !important;
+  border-radius: 4px !important;
+  padding: 7px 16px !important;
+  transition: all 0.15s !important;
+  text-decoration: none !important;
+}
+
+.btn:hover,
+.btn--primary:hover,
+a.btn:hover {
+  background: var(--color-blue) !important;
+  color: var(--color-white) !important;
+}
+
+/* Bouton téléchargement CV (plein) */
+.btn--inverse {
+  background: var(--color-blue) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+}
+
+.btn--inverse:hover {
+  background: var(--color-blue-dark) !important;
+}
+
+/* --- 11. LIENS GLOBAUX --- */
+a {
+  color: var(--color-blue) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--color-ochre) !important;
+  text-decoration: underline !important;
+}
+
+/* Liens de la page de contenu */
+.page__content a {
+  color: var(--color-blue) !important;
+}
+
+.page__content a:hover {
+  color: var(--color-ochre) !important;
+}
+
+/* --- 12. FOOTER --- */
+.page__footer {
+  background: var(--color-white) !important;
+  border-top: 0.5px solid var(--color-border) !important;
+  color: var(--color-text-light) !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  padding: 16px !important;
+}
+
+.page__footer a {
+  color: var(--color-text-light) !important;
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: var(--color-blue) !important;
+}
+
+/* --- 13. RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+  #main {
+    padding: 20px 16px !important;
+  }
+
+  .masthead__inner-wrap {
+    padding: 0 16px !important;
+  }
+
+  .author__avatar {
+    width: 90px !important;
+    height: 90px !important;
+    margin: 0 20px 16px 0 !important;
+  }
+
+  .author__avatar img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+
+  .greedy-nav .visible-links a {
+    padding: 0 10px !important;
+    font-size: 11px !important;
+  }
+}
