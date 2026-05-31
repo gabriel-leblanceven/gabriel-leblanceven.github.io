@@ -6,7 +6,7 @@ author_profile: false
 
 <div style="display: flex; gap: 32px; align-items: flex-start; margin-bottom: 32px;">
   <div style="flex-shrink: 0;">
-    <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border: 3px solid #c8921a; object-fit: cover;">
+    <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 8px; border: 3px solid #c8921a; object-fit: cover;">
   </div>
   <div>
     <h1 style="font-size: 1.5em; font-weight: 500; color: #324f6b; margin-bottom: 4px;">Gabriel Le Blanc-Even</h1>
