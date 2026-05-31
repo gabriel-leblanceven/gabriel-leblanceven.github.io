@@ -6,12 +6,13 @@ author_profile: false
 <div style="display: flex; gap: 32px; align-items: flex-start; margin-bottom: 32px;">
   <div style="flex-shrink: 0; text-align: center;">
     <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 14px; border: 3px solid #c8921a; object-fit: cover;">
-    <p style="margin-top: 12px; font-size: 12px; color: #888; line-height: 1.8; text-align: left;">
-      🏛 Université de Rennes<br>
-      📍 Rennes, France<br>
-      ✉ <a href="mailto:votre@email.fr" style="color: #c8921a;">votre@email.fr</a><br>
-      <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">⌥ GitHub</a>
-    </p>
+   <p style="margin-top: 12px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
+  <i class="fas fa-building-columns" style="color: #324f6b; width: 16px;"></i> Université de Rennes<br>
+  <i class="fas fa-map-marker-alt" style="color: #324f6b; width: 16px;"></i> Rennes, France<br>
+  <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="mailto:votre@email.fr" style="color: #c8921a;">votre@email.fr</a><br>
+  <i class="fab fa-github" style="color: #324f6b; width: 16px;"></i> <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">GitHub</a><br>
+  <i class="fab fa-linkedin" style="color: #324f6b; width: 16px;"></i> <a href="https://linkedin.com/in/votre-profil" style="color: #c8921a;">LinkedIn</a>
+</p>
   </div>
   <div>
     <h1 style="font-size: 1.5em; font-weight: 500; color: #324f6b; margin-bottom: 4px;">Gabriel Le Blanc-Even</h1>
