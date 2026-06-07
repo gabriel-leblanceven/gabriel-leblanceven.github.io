@@ -7,8 +7,30 @@ author_profile: false
 
 {% include base_path %}
 
+{% assign wip = site.publications | where: "category", "workingpaper" %}
+{% assign working = site.publications | where: "category", "working" %}
+{% assign published = site.publications | where: "category", "published" %}
+
+{% if wip.size > 0 %}
 <h2>Work in Progress</h2>
 <hr />
-{% for post in site.publications reversed %}
+{% for post in wip reversed %}
   {% include archive-single.html %}
 {% endfor %}
+{% endif %}
+
+{% if working.size > 0 %}
+<h2>Working Papers</h2>
+<hr />
+{% for post in working reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+{% endif %}
+
+{% if published.size > 0 %}
+<h2>Published Papers</h2>
+<hr />
+{% for post in published reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+{% endif %}
