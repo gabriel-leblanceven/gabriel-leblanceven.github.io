@@ -12,7 +12,7 @@ author_profile: false
 {% assign published = site.publications | where: "category", "published" %}
 
 {% if wip.size > 0 %}
-<h2>Work in Progress</h2>
+<h2>Works in Progress</h2>
 <hr />
 {% for post in wip reversed %}
   {% include archive-single.html %}
