@@ -3,7 +3,7 @@ permalink: /
 title: ""
 author_profile: false
 ---
-<div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 32px; margin-left: -128px;">
+<div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 32px; margin-left: -128px; margin-right: -128px;">
   <div style="flex-shrink: 0; text-align: center;">
     <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 14px; border: 3px solid #c8921a; object-fit: cover;">
    <p style="margin-top: 12px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
