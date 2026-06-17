@@ -6,11 +6,11 @@ author_profile: false
 <div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 60px; margin-left: -128px; margin-right: -128px;">
   <div style="flex-shrink: 0; text-align: center;">
     <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 14px; border: 3px solid #c8921a; object-fit: cover;">
-    <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #888;">PhD Candidate in Economics</p>
+    <p style="margin-top:12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #888;">PhD Candidate in Economics</p>
     <p style="margin-top: 8px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
       <i class="fas fa-building-columns" style="color: #324f6b; width: 16px;"></i> University of Rennes<br>
       <i class="fas fa-map-marker-alt" style="color: #324f6b; width: 16px;"></i> Rennes, France<br>
-      <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="gabriel.leblanc-even@univ-rennes.fr" style="color: #c8921a;">Mail</a><br>
+      <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="mailto:gabriel.leblanc-even@univ-rennes.fr" style="color: #c8921a;">Mail</a><br>
       <i class="fab fa-github" style="color: #324f6b; width: 16px;"></i> <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">GitHub</a><br>
       <i class="fab fa-linkedin" style="color: #324f6b; width: 16px;"></i> <a href="https://linkedin.com/in/votre-profil" style="color: #c8921a;">LinkedIn</a>
     </p>
