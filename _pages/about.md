@@ -6,18 +6,19 @@ author_profile: false
 <div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 32px; margin-left: -128px; margin-right: -128px;">
   <div style="flex-shrink: 0; text-align: center;">
     <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 14px; border: 3px solid #c8921a; object-fit: cover;">
-   <p style="margin-top: 12px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
-  <i class="fas fa-building-columns" style="color: #324f6b; width: 16px;"></i> University of Rennes<br>
-  <i class="fas fa-map-marker-alt" style="color: #324f6b; width: 16px;"></i> Rennes, France<br>
-  <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="gabriel.leblanc-even@univ-rennes.fr" style="color: #c8921a;">gabriel.leblanc-even@univ-rennes.fr</a><br>
-  <i class="fab fa-github" style="color: #324f6b; width: 16px;"></i> <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">GitHub</a><br>
-  <i class="fab fa-linkedin" style="color: #324f6b; width: 16px;"></i> <a href="https://linkedin.com/in/votre-profil" style="color: #c8921a;">LinkedIn</a>
-</p>
+    <p style="margin-top: 12px; font-size: 13px; font-weight: 500; color: #324f6b;">Gabriel</p>
+    <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #888;">PhD Candidate in Economics</p>
+    <p style="margin-top: 8px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
+      <i class="fas fa-building-columns" style="color: #324f6b; width: 16px;"></i> Université de Rennes<br>
+      <i class="fas fa-map-marker-alt" style="color: #324f6b; width: 16px;"></i> Rennes, France<br>
+      <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="mailto:votre@email.fr" style="color: #c8921a;">votre@email.fr</a><br>
+      <i class="fab fa-github" style="color: #324f6b; width: 16px;"></i> <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">GitHub</a><br>
+      <i class="fab fa-linkedin" style="color: #324f6b; width: 16px;"></i> <a href="https://linkedin.com/in/votre-profil" style="color: #c8921a;">LinkedIn</a>
+    </p>
   </div>
   <div>
-    <h1 style="font-size: 1.5em; font-weight: 500; color: #324f6b; margin-bottom: 4px;">Gabriel Leblanc-Even</h1>
-    <p style="font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; color: #888; margin-bottom: 16px;">PhD Candidate in Economics · University of Rennes</p>
-    <p style="text-align: justify;">Welcome on my website. I am a PhD candidate at the Centre de Recherche en Economie et en Management (CREM, CNRS 6211), affiliated with the University of Rennes. I work under the supervision of Dr. Josselin Thuilliez, CNRS Research Director.</p>
+    <h1 style="font-size: 1.5em; font-weight: 500; color: #324f6b; margin-bottom: 4px;">Welcome on my website !</h1>
+    <p style="text-align: justify;">I am a PhD candidate at the Centre de Recherche en Economie et en Management (CREM, CNRS 6211), affiliated with the University of Rennes. I work under the supervision of Dr. Josselin Thuilliez, CNRS Research Director.</p>
     <p style="text-align:justify;">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies - not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions. </p>
     <p style="text-align:justify;">My primary research agenda lies in health economics, closely connected to epidemiology, nevertheless I have a strong interest in development economics and how public policies can shape human societies. </p>
     <p style="text-align:justify;"> I hold two Master's degrees: one in Public Policy & Project Finance from Audencia Business School (2022), and another in Development Economics from Paris 1 Panthéon-Sorbonne University (2024)</p>
