@@ -3,7 +3,7 @@ permalink: /
 title: ""
 author_profile: false
 ---
-<div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 32px; margin-left: -128px; margin-right: -128px;">
+<div style="display: flex; gap: 64px; align-items: flex-start; margin-bottom: 60px; margin-left: -128px; margin-right: -128px;">
   <div style="flex-shrink: 0; text-align: center;">
     <img src="/images/profile.png" alt="Photo" style="width: 200px; height: 250px; border-radius: 14px; border: 3px solid #c8921a; object-fit: cover;">
     <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #888;">PhD Candidate in Economics</p>
