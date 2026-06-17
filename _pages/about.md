@@ -24,7 +24,7 @@ author_profile: false
     
     <p style="text-align:justify;"> You can find the latest version of my resume by clicking below.</p>
     <p>
-      <a href="/files/CV.pdf" style="display: inline-block; border: 1.5px solid #324f6b; color: #324f6b; padding: 7px 16px; border-radius: 4px; text-decoration: none; font-size: 0.85em; font-weight: 500;"> Download my resume </a>
+      <a href="/files/CV.pdf" class="cv-download-btn" style="display: inline-block; border: 1.5px solid #324f6b; color: #324f6b; padding: 7px 16px; border-radius: 4px; text-decoration: none; font-size: 0.85em; font-weight: 500;"> Download my resume </a>
     </p>
     <p style="text-align:justify;">I wish you a pleasant visit !</p>
   </div>
