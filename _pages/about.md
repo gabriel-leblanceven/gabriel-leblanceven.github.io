@@ -19,12 +19,13 @@ author_profile: false
     <p style="font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; color: #888; margin-bottom: 16px;">PhD Candidate in Economics · University of Rennes</p>
     <p style="text-align: justify;">Welcome on my website. I am a PhD candidate at the Centre de Recherche en Economie et en Management (CREM, CNRS 6211), affiliated with the University of Rennes. I work under the supervision of Dr. Josselin Thuilliez, CNRS Research Director.</p>
     <p style="text-align:justify;">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies - not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions. </p>
-    <p style="text-align:justify;">My primary research agenda lies in health economics, closely connected to epidemiology, nevertheless I have a strong interest in development economics and how public policies can shape human societies. <\p>
-    <p style="text-align:justify;"> I hold two Master's degrees: one in Public Policy & Project Finance from Audencia Business School (2022), and another in Development Economics from Paris 1 Panthéon-Sorbonne University (2024)<\p>
+    <p style="text-align:justify;">My primary research agenda lies in health economics, closely connected to epidemiology, nevertheless I have a strong interest in development economics and how public policies can shape human societies. </p>
+    <p style="text-align:justify;"> I hold two Master's degrees: one in Public Policy & Project Finance from Audencia Business School (2022), and another in Development Economics from Paris 1 Panthéon-Sorbonne University (2024)</p>
     
-    <p style="text-align:justify;"> You can find the latest version of my resume by clicking below.<\p>
+    <p style="text-align:justify;"> You can find the latest version of my resume by clicking below.</p>
+    <p>
       <a href="/files/CV.pdf" style="display: inline-block; border: 1.5px solid #324f6b; color: #324f6b; padding: 7px 16px; border-radius: 4px; text-decoration: none; font-size: 0.85em; font-weight: 500;"> Download my resume </a>
     </p>
-    <p style="text-align:justify;">I wish you a pleasant visit !<\p>
+    <p style="text-align:justify;">I wish you a pleasant visit !</p>
   </div>
 </div>
