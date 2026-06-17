@@ -10,7 +10,7 @@ author_profile: false
     <p style="margin-top: 8px; font-size: 12px; color: #888; line-height: 2; text-align: left;">
       <i class="fas fa-building-columns" style="color: #324f6b; width: 16px;"></i> University of Rennes<br>
       <i class="fas fa-map-marker-alt" style="color: #324f6b; width: 16px;"></i> Rennes, France<br>
-      <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="mailto:votre@email.fr" style="color: #c8921a;">votre@email.fr</a><br>
+      <i class="fas fa-envelope" style="color: #324f6b; width: 16px;"></i> <a href="gabriel.leblanc-even@univ-rennes.fr" style="color: #c8921a;">Mail</a><br>
       <i class="fab fa-github" style="color: #324f6b; width: 16px;"></i> <a href="https://github.com/gabriel-leblanceven" style="color: #c8921a;">GitHub</a><br>
       <i class="fab fa-linkedin" style="color: #324f6b; width: 16px;"></i> <a href="https://linkedin.com/in/votre-profil" style="color: #c8921a;">LinkedIn</a>
     </p>
