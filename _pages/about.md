@@ -56,6 +56,8 @@ layout: single
 .page__hero{display:none !important;}
 body{padding-top:0 !important;}
 #masthead{display:none !important;}
+.page__footer{display:none !important;}
+.footer{display:none !important;}
 </style>
 
 <div class="gle">
