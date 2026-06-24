@@ -53,6 +53,9 @@ layout: single
   .gle__name{font-size:40px;}
 }
 .page__content{padding-left:0 !important;padding-right:0 !important;}
+.page__hero{display:none !important;}
+body{padding-top:0 !important;}
+#masthead{display:none !important;}
 </style>
 
 <div class="gle">
