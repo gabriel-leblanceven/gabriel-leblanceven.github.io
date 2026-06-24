@@ -49,6 +49,10 @@ layout: single
   .gle__footer{flex-direction:column;gap:8px;align-items:flex-start;}
   .gle__name{font-size:40px;}
 }
+.page{max-width:100% !important;padding:0 !important;}
+.page__inner-wrap{max-width:100% !important;}
+.gle__navlinks a{text-decoration:none !important;}
+.gle__logo a{text-decoration:none !important;}
 </style>
 
 <div class="gle">
