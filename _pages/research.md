@@ -4,7 +4,7 @@ title: ""
 author_profile: false
 hide_masthead: true
 classes: wide
-layout: default
+layout: none
 ---
 
 {% include gle-head.html active="research" %}
