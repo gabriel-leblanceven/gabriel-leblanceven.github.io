@@ -53,6 +53,8 @@ layout: single
 .page__inner-wrap{max-width:100% !important;}
 .gle__navlinks a{text-decoration:none !important;}
 .gle__logo a{text-decoration:none !important;}
+.page__content{float:none !important;width:100% !important;}
+#main{max-width:100% !important;padding:0 !important;}
 </style>
 
 <div class="gle">
