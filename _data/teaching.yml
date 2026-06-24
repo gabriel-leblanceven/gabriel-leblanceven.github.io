@@ -1,0 +1,11 @@
+- title: "Course title 1"
+  level: "L1"
+  role: "TA"
+  institution: "University of Rennes"
+  description: "Short description of the course content and your role."
+
+- title: "Course title 2"
+  level: "L3"
+  role: "TA"
+  institution: "University of Rennes"
+  description: "Short description of the course content and your role."
