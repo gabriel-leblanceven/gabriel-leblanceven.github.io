@@ -52,6 +52,7 @@ layout: single
   .gle__footer{flex-direction:column;gap:8px;align-items:flex-start;}
   .gle__name{font-size:40px;}
 }
+.page__content{padding-left:0 !important;padding-right:0 !important;}
 </style>
 
 <div class="gle">
