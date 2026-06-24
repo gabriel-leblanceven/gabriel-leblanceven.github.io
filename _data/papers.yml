@@ -1,0 +1,14 @@
+- title: "Title 1"
+  coauthors: "Coauthor 1"
+  abstract: "Abstract 1 — a short summary of the question, data and approach goes here."
+  status: wip
+
+- title: "Title 2"
+  coauthors: ""
+  abstract: "Abstract 2 — single-authored work in progress."
+  status: wip
+
+- title: "Title 3"
+  coauthors: "Coauthor A, Coauthor B"
+  abstract: "Abstract 3 — a working paper with a circulated draft."
+  status: working
