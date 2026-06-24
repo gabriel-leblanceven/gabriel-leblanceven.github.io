@@ -1,64 +1,79 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+title: ""
+author_profile: false
+hide_masthead: true
+classes: wide
+layout: single
 ---
 
-{% include base_path %}
+<style>
+.gle{font-family:'Public Sans',sans-serif;color:#14171C;max-width:1080px;margin:0 auto;}
+.gle a{text-decoration:none;}
+.gle__nav{display:flex;align-items:center;justify-content:space-between;padding:26px 56px;}
+.gle__logo{font-family:'Space Mono',monospace;font-size:18px;font-weight:700;letter-spacing:0.42em;}
+.gle__logo .g{color:#324f6b;}
+.gle__logo .le{color:#fff;-webkit-text-stroke:0.9px #324f6b;}
+.gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
+.gle__navlinks a{color:#324f6b;}
+.gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
+.gle__bar{height:3px;background:#c8921a;}
+.gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
+.gle__titlelabel{padding:38px 0 38px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
+.gle__titlebody{padding:32px 56px 36px 40px;}
+.gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
+.gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
+.gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
+.gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
+.gle__rowbody{padding:30px 56px 32px 40px;}
+.gle__btn{display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:11px 18px;}
+.gle__btn:hover{background:#324f6b;color:#fff;}
+.gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
+@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+</style>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div class="gle__nav">
+  <div class="gle__logo"><a href="{{ '/' | relative_url }}"><span class="g">G</span><span class="le">LE</span></a></div>
+  <nav class="gle__navlinks">
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/talks/'    | relative_url }}">Talks</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a href="{{ '/cv/'       | relative_url }}" class="is-active">CV</a>
+  </nav>
+</div>
+<div class="gle__bar"></div>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<div class="gle">
+  <div class="gle__titleband">
+    <div class="gle__titlelabel">Curriculum Vitae</div>
+    <div class="gle__titlebody">
+      <h1 class="gle__h1">Curriculum Vitae</h1>
+      <div class="gle__intro">A short overview &mdash; full details in the PDF.</div>
+    </div>
+  </div>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  <div class="gle__row">
+    <div class="gle__rowlabel">Download</div>
+    <div class="gle__rowbody">
+      <a class="gle__btn" href="{{ '/files/cv.pdf' | relative_url }}">Download full CV (PDF) &darr;</a>
+    </div>
+  </div>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  <div class="gle__row">
+    <div class="gle__rowlabel">Education</div>
+    <div class="gle__rowbody">
+      <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;">
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:#324f6b;font-weight:700;">2023</div>
+        <div>
+          <div style="font-size:16.5px;font-weight:600;color:#1a2230;">Degree 1</div>
+          <div style="font-size:13.5px;color:#6a7078;margin-top:3px;">Institution 1</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  <div class="gle__footer">
+    <span>gabriel.leblanc-even@univ-rennes.fr</span>
+    <span>Rennes, France &middot; &copy; {{ 'now' | date: "%Y" }}</span>
+  </div>
+</div>
