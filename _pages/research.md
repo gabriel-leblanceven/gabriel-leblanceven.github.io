@@ -4,13 +4,51 @@ title: ""
 author_profile: false
 hide_masthead: true
 classes: wide
-layout: none
+layout: single
 ---
 
-{% include gle-head.html active="research" %}
+<style>
+.gle{font-family:'Public Sans',sans-serif;color:#14171C;max-width:1080px;margin:0 auto;}
+.gle a{text-decoration:none;}
+.gle__nav{display:flex;align-items:center;justify-content:space-between;padding:26px 56px;}
+.gle__logo{font-family:'Space Mono',monospace;font-size:18px;font-weight:700;letter-spacing:0.42em;}
+.gle__logo .g{color:#324f6b;}
+.gle__logo .le{color:#fff;-webkit-text-stroke:0.9px #324f6b;}
+.gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
+.gle__navlinks a{color:#324f6b;}
+.gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
+.gle__bar{height:3px;background:#c8921a;}
+.gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
+.gle__titlelabel{padding:38px 0 38px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
+.gle__titlebody{padding:32px 56px 36px 40px;}
+.gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
+.gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
+.gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
+.gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
+.gle__rowbody{padding:14px 56px 20px 40px;}
+.gle__item{padding:22px 0;border-bottom:1px solid #EDEEF1;}
+.gle__item:last-child{border-bottom:none;}
+.gle__ititle{font-family:'Newsreader',serif;font-size:21px;font-weight:500;line-height:1.3;color:#1a2230;}
+.gle__byline{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#c8921a;margin-top:6px;}
+.gle__abs{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:10px;max-width:640px;}
+.gle__pdf{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;margin-top:12px;padding-bottom:1px;}
+.gle__pdf:hover{color:#c8921a;}
+.gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
+@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+</style>
+
+<div class="gle__nav">
+  <div class="gle__logo"><a href="{{ '/' | relative_url }}"><span class="g">G</span><span class="le">LE</span></a></div>
+  <nav class="gle__navlinks">
+    <a href="{{ '/research/' | relative_url }}" class="is-active">Research</a>
+    <a href="{{ '/talks/'    | relative_url }}">Talks</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a href="{{ '/cv/'       | relative_url }}">CV</a>
+  </nav>
+</div>
+<div class="gle__bar"></div>
 
 <div class="gle">
-
   <div class="gle__titleband">
     <div class="gle__titlelabel">Research</div>
     <div class="gle__titlebody">
@@ -19,10 +57,8 @@ layout: none
     </div>
   </div>
 
-  {% comment %} Fixed section order; empty statuses are skipped automatically. {% endcomment %}
   {% assign order = "published,working,wip" | split: "," %}
   {% assign labels = "Published,Working papers,Work in progress" | split: "," %}
-
   {% for status in order %}
     {% assign group = site.data.papers | where: "status", status %}
     {% if group.size > 0 %}
@@ -42,6 +78,8 @@ layout: none
     {% endif %}
   {% endfor %}
 
+  <div class="gle__footer">
+    <span>gabriel.leblanc-even@univ-rennes.fr</span>
+    <span>Rennes, France &middot; &copy; {{ 'now' | date: "%Y" }}</span>
+  </div>
 </div>
-
-{% include gle-foot.html %}
