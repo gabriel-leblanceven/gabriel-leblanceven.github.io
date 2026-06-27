@@ -60,6 +60,7 @@ body{padding-top:0 !important;}
   .gle__footer{flex-direction:column;gap:8px;align-items:flex-start;}
   .gle__name{font-size:40px;}
 }
+html, body{margin:0 !important;padding:0 !important;}
 </style>
 
 <div class="gle__nav">
