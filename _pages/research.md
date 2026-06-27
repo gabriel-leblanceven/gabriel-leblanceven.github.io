@@ -18,8 +18,8 @@ layout: single
 .gle__navlinks a{color:#324f6b;text-decoration:none !important;}
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
-.gle__titleband{display:grid;grid-template-columns:1fr;border-bottom:1px solid #14171C;}
-.gle__titlebody{padding:32px 56px 36px 56px;}
+.gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
+.gle__titlebody{padding:32px 56px 36px 40px;}
 .gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
@@ -60,6 +60,7 @@ body{padding-top:0 !important;}
 
 <div class="gle">
   <div class="gle__titleband">
+    <div></div>
     <div class="gle__titlebody">
       <h1 class="gle__h1">Research</h1>
       <div class="gle__intro">My ongoing work in health economics, at the meeting point of epidemiology and public policy.</div>
