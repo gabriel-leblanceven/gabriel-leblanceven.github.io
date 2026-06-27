@@ -15,7 +15,7 @@ layout: single
 .gle__logo .g{color:#324f6b;}
 .gle__logo .le{color:#fff;-webkit-text-stroke:0.9px #324f6b;}
 .gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
-.gle__navlinks a{color:#324f6b;}
+.gle__navlinks a{color:#324f6b;text-decoration:none !important;}
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
@@ -30,6 +30,17 @@ layout: single
 .gle__item:last-child{border-bottom:none;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
 @media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+.page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
+.sidebar,.sidebar__right{display:none !important;}
+.page__content{padding-left:0 !important;padding-right:0 !important;}
+.page__hero{display:none !important;}
+body{padding-top:0 !important;}
+#masthead{display:none !important;}
+.page__footer{display:none !important;}
+.footer{display:none !important;}
+.gle__logo a{text-decoration:none !important;color:inherit;}
+.gle__logo a:hover .g{color:#c8921a;}
+.gle__logo a:hover .le{color:transparent;-webkit-text-stroke:0.9px #c8921a;text-stroke:0.9px #c8921a;}
 </style>
 
 <div class="gle__nav">
