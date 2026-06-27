@@ -18,7 +18,9 @@ layout: single
 .gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
 .gle__navlinks a{color:#324f6b;text-decoration:none !important;}
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
-.gle__logo a{text-decoration:none !important;}
+.gle__logo a{text-decoration:none !important;color:inherit;}
+.gle__logo a:hover .g{color:#c8921a;}
+.gle__logo a:hover .le{color:transparent;-webkit-text-stroke:0.9px #c8921a;text-stroke:0.9px #c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__hero{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__photo{width:100%;height:100%;min-height:380px;object-fit:cover;border-right:1px solid #E3E5E9;display:block;background:#f2f3f5;}
@@ -41,8 +43,14 @@ layout: single
 .gle__more:hover{color:#c8921a;}
 .gle__muted{color:#9aa3b0;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;}
-.page,.page__inner-wrap,.page__content,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
+.page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
 .sidebar,.sidebar__right{display:none !important;}
+.page__content{padding-left:0 !important;padding-right:0 !important;}
+.page__hero{display:none !important;}
+body{padding-top:0 !important;}
+#masthead{display:none !important;}
+.page__footer{display:none !important;}
+.footer{display:none !important;}
 @media (max-width:720px){
   .gle__hero,.gle__row{grid-template-columns:1fr;}
   .gle__photo{min-height:280px;border-right:none;border-bottom:1px solid #E3E5E9;}
@@ -52,27 +60,20 @@ layout: single
   .gle__footer{flex-direction:column;gap:8px;align-items:flex-start;}
   .gle__name{font-size:40px;}
 }
-.page__content{padding-left:0 !important;padding-right:0 !important;}
-.page__hero{display:none !important;}
-body{padding-top:0 !important;}
-#masthead{display:none !important;}
-.page__footer{display:none !important;}
-.footer{display:none !important;}
 </style>
 
+<div class="gle__nav">
+  <div class="gle__logo"><span class="g">G</span><span class="le">LE</span></div>
+  <nav class="gle__navlinks">
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/talks/' | relative_url }}">Talks</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+  </nav>
+</div>
+<div class="gle__bar"></div>
+
 <div class="gle">
-
-  <div class="gle__nav">
-    <div class="gle__logo"><span class="g">G</span><span class="le">LE</span></div>
-    <nav class="gle__navlinks">
-      <a href="{{ '/research/' | relative_url }}">Research</a>
-      <a href="{{ '/talks/' | relative_url }}">Talks</a>
-      <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
-      <a href="{{ '/cv/' | relative_url }}">CV</a>
-    </nav>
-  </div>
-  <div class="gle__bar"></div>
-
   <div class="gle__hero">
     <img class="gle__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Gabriel Leblanc-Even">
     <div class="gle__herobody">
@@ -123,7 +124,6 @@ body{padding-top:0 !important;}
 
   <div class="gle__footer">
     <span>gabriel.leblanc-even@univ-rennes.fr</span>
-    <span>Rennes, France &middot; &copy; 2026</span>
+    <span>Rennes, France &middot; &copy; {{ 'now' | date: "%Y" }}</span>
   </div>
-
 </div>
