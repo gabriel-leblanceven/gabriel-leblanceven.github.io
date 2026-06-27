@@ -12,10 +12,10 @@ layout: single
 .gle a{text-decoration:none;}
 .gle__nav{display:flex;align-items:center;justify-content:space-between;padding:26px 56px;}
 .gle__logo{font-family:'Space Mono',monospace;font-size:18px;font-weight:700;letter-spacing:0.42em;}
-.gle__logo a:hover .g{color:#c8921a;}
-.gle__logo a:hover .le{color:transparent;-webkit-text-stroke:0.9px #c8921a;text-stroke:0.9px #c8921a;}
+.gle__logo .g{color:#324f6b;}
+.gle__logo .le{color:#fff;-webkit-text-stroke:0.9px #324f6b;}
 .gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
-.gle__navlinks a{color:#324f6b;}
+.gle__navlinks a{color:#324f6b;text-decoration:none !important;}
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
@@ -43,11 +43,9 @@ body{padding-top:0 !important;}
 #masthead{display:none !important;}
 .page__footer{display:none !important;}
 .footer{display:none !important;}
-.gle__navlinks a{text-decoration:none !important;color:#324f6b;}
-.gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__logo a{text-decoration:none !important;color:inherit;}
 .gle__logo a:hover .g{color:#c8921a;}
-.gle__logo a:hover .le{color:#c8921a;-webkit-text-stroke:0.9px #c8921a;}
+.gle__logo a:hover .le{color:transparent;-webkit-text-stroke:0.9px #c8921a;text-stroke:0.9px #c8921a;}
 </style>
 
 <div class="gle__nav">
