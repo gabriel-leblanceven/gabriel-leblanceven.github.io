@@ -24,7 +24,7 @@ layout: single
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
-.gle__rowbody{padding:30px 56px 32px 40px;}
+.gle__rowbody{padding:20px 56px 24px 40px;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
 @media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
@@ -60,16 +60,19 @@ body{padding-top:0 !important;}
     </div>
   </div>
 
-  {% for c in site.data.teaching %}
+  {% assign byyear = site.data.teaching | group_by: "year" | sort: "name" | reverse %}
+  {% for grp in byyear %}
     <div class="gle__row">
-      <div class="gle__rowlabel">
-        <div>{{ c.level }}</div>
-        <div style="color:#c8921a;margin-top:8px;font-size:10.5px;">{{ c.role }}</div>
-      </div>
+      <div class="gle__rowlabel">{{ grp.name }}</div>
       <div class="gle__rowbody">
-        <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
-        <div style="font-size:13px;color:#6a7078;margin-top:4px;font-style:italic;">{{ c.institution }}</div>
-        <div style="font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:620px;">{{ c.description }}</div>
+        {% for c in grp.items %}
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDEEF1;">
+            <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
+            <div style="font-family:'Space Mono',monospace;font-size:10.5px;color:#c8921a;margin-top:6px;letter-spacing:0.04em;">{{ c.level }} &middot; {{ c.role }}</div>
+            <div style="font-size:13px;color:#6a7078;margin-top:4px;font-style:italic;">{{ c.institution }}</div>
+            <div style="font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:10px;max-width:620px;">{{ c.description }}</div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   {% endfor %}
