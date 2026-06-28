@@ -23,7 +23,7 @@ layout: single
 .gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
-.gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.06em;color:#324f6b;}
+.gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowbody{padding:14px 56px 20px 40px;}
 .gle__item{padding:22px 0;border-bottom:1px solid #EDEEF1;}
 .gle__item:last-child{border-bottom:none;}
@@ -69,8 +69,8 @@ body{padding-top:0 !important;}
       <div class="gle__rowbody">
         {% for t in grp.items %}
           <div class="gle__item">
-            <div style="font-size:16px;font-weight:600;color:#324f6b;line-height:1.4;">{{ t.title }}</div>
-            <div style="font-size:13px;color:#6a7078;margin-top:4px;font-style:italic;">{{ t.place }}</div>
+            <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ t.title }}</div>
+            <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:4px;">{{ t.place }}</div>
           </div>
         {% endfor %}
       </div>
