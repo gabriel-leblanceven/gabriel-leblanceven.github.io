@@ -19,7 +19,6 @@ layout: single
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
-.gle__titlelabel{padding:38px 0 38px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__titlebody{padding:32px 56px 36px 40px;}
 .gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
@@ -29,7 +28,7 @@ layout: single
 .gle__item{padding:22px 0;border-bottom:1px solid #EDEEF1;}
 .gle__item:last-child{border-bottom:none;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
-@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
 .sidebar,.sidebar__right{display:none !important;}
 .page__content{padding-left:0 !important;padding-right:0 !important;}
@@ -56,7 +55,7 @@ body{padding-top:0 !important;}
 
 <div class="gle">
   <div class="gle__titleband">
-    <div class="gle__titlelabel">Talks</div>
+    <div></div>
     <div class="gle__titlebody">
       <h1 class="gle__h1">Talks &amp; presentations</h1>
       <div class="gle__intro">Seminars, workshops and conferences, by year.</div>
@@ -70,8 +69,8 @@ body{padding-top:0 !important;}
       <div class="gle__rowbody">
         {% for t in grp.items %}
           <div class="gle__item">
-            <div style="font-size:16px;font-weight:600;color:#1a2230;line-height:1.4;">{{ t.title }}</div>
-            <div style="font-size:13.5px;color:#6a7078;margin-top:4px;">{{ t.place }}</div>
+            <div style="font-size:16px;font-weight:600;color:#324f6b;line-height:1.4;">{{ t.title }}</div>
+            <div style="font-size:13px;color:#6a7078;margin-top:4px;font-style:italic;">{{ t.place }}</div>
           </div>
         {% endfor %}
       </div>
