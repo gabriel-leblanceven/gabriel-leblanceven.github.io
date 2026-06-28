@@ -19,7 +19,6 @@ layout: single
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
-.gle__titlelabel{padding:38px 0 38px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__titlebody{padding:32px 56px 36px 40px;}
 .gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
@@ -27,7 +26,7 @@ layout: single
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowbody{padding:30px 56px 32px 40px;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
-@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
 .sidebar,.sidebar__right{display:none !important;}
 .page__content{padding-left:0 !important;padding-right:0 !important;}
@@ -54,7 +53,7 @@ body{padding-top:0 !important;}
 
 <div class="gle">
   <div class="gle__titleband">
-    <div class="gle__titlelabel">Teaching</div>
+    <div></div>
     <div class="gle__titlebody">
       <h1 class="gle__h1">Teaching</h1>
       <div class="gle__intro">Courses I teach as a teaching assistant at the University of Rennes.</div>
@@ -68,8 +67,8 @@ body{padding-top:0 !important;}
         <div style="color:#c8921a;margin-top:8px;font-size:10.5px;">{{ c.role }}</div>
       </div>
       <div class="gle__rowbody">
-        <div style="font-size:18px;font-weight:600;color:#1a2230;">{{ c.title }}</div>
-        <div style="font-size:13px;color:#6a7078;margin-top:4px;font-family:'Space Mono',monospace;letter-spacing:0.03em;">{{ c.institution }}</div>
+        <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
+        <div style="font-size:13px;color:#6a7078;margin-top:4px;font-style:italic;">{{ c.institution }}</div>
         <div style="font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:620px;">{{ c.description }}</div>
       </div>
     </div>
