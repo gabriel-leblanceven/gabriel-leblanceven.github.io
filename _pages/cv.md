@@ -15,11 +15,10 @@ layout: single
 .gle__logo .g{color:#324f6b;}
 .gle__logo .le{color:#fff;-webkit-text-stroke:0.9px #324f6b;}
 .gle__navlinks{display:flex;gap:36px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;}
-.gle__navlinks a{color:#324f6b;}
+.gle__navlinks a{color:#324f6b;text-decoration:none !important;}
 .gle__navlinks a:hover,.gle__navlinks a.is-active{color:#c8921a;}
 .gle__bar{height:3px;background:#c8921a;}
 .gle__titleband{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #14171C;}
-.gle__titlelabel{padding:38px 0 38px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__titlebody{padding:32px 56px 36px 40px;}
 .gle__h1{font-family:'Newsreader',serif;font-size:40px;font-weight:500;line-height:1.05;color:#324f6b;margin:0;}
 .gle__intro{font-size:15px;color:#5a6275;line-height:1.6;margin-top:12px;max-width:600px;}
@@ -29,7 +28,18 @@ layout: single
 .gle__btn{display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:11px 18px;}
 .gle__btn:hover{background:#324f6b;color:#fff;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
-@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__titlelabel,.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+@media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
+.page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
+.sidebar,.sidebar__right{display:none !important;}
+.page__content{padding-left:0 !important;padding-right:0 !important;}
+.page__hero{display:none !important;}
+body{padding-top:0 !important;}
+#masthead{display:none !important;}
+.page__footer{display:none !important;}
+.footer{display:none !important;}
+.gle__logo a{text-decoration:none !important;color:inherit;}
+.gle__logo a:hover .g{color:#c8921a;}
+.gle__logo a:hover .le{color:transparent;-webkit-text-stroke:0.9px #c8921a;text-stroke:0.9px #c8921a;}
 </style>
 
 <div class="gle__nav">
@@ -45,7 +55,7 @@ layout: single
 
 <div class="gle">
   <div class="gle__titleband">
-    <div class="gle__titlelabel">Curriculum Vitae</div>
+    <div></div>
     <div class="gle__titlebody">
       <h1 class="gle__h1">Curriculum Vitae</h1>
       <div class="gle__intro">A short overview &mdash; full details in the PDF.</div>
@@ -65,8 +75,8 @@ layout: single
       <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;">
         <div style="font-family:'Space Mono',monospace;font-size:13px;color:#324f6b;font-weight:700;">2023</div>
         <div>
-          <div style="font-size:16.5px;font-weight:600;color:#1a2230;">Degree 1</div>
-          <div style="font-size:13.5px;color:#6a7078;margin-top:3px;">Institution 1</div>
+          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">Degree 1</div>
+          <div style="font-size:13px;color:#6a7078;margin-top:3px;font-style:italic;">Institution 1</div>
         </div>
       </div>
     </div>
