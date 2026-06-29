@@ -80,7 +80,7 @@ html, body{margin:0 !important;padding:0 !important;}
       <div class="gle__kicker">PhD Candidate in Economics</div>
       <h1 class="gle__name">Gabriel<br>Leblanc-Even</h1>
       <div class="gle__affil">CREM &middot; CNRS UMR 6211 &mdash; University of Rennes<br>Supervised by Josselin Thuilliez (CNRS)</div>
-      <p class="gle__lede">Health economics at the edge of epidemiology and public policy. I study how environmental shocks and intergenerational dynamics shape health and socioeconomic outcomes &mdash; and how public policies interact in shaping it.</p>
+      <p class="gle__lede">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies - not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions</p>
       <div class="gle__links">
         <a class="gle__btn" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
@@ -93,7 +93,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Research</div>
     <div class="gle__rowbody">
-      <p class="gle__text">My ongoing projects sit at the meeting point of health economics and epidemiology: how environmental shocks and intergenerational dynamics shape health, and how public policies interact &mdash; reinforcing or offsetting one another &mdash; in health-related decisions.</p>
+      <p class="gle__text">My primary research agenda lies in health economics, closely connected to epidemiology, with a strong interest in development economics and how public policies can shape human societies.</p>
       <a class="gle__more" href="{{ '/research/' | relative_url }}">More in Research &rarr;</a>
     </div>
   </div>
@@ -101,7 +101,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Teaching</div>
     <div class="gle__rowbody">
-      <p class="gle__text">Teaching assistant in microeconomics and applied econometrics at the University of Rennes. I like making empirical reasoning intuitive for first encounters with data. <span class="gle__muted">(replace with your own)</span></p>
+      <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics. <span class="gle__muted">(replace with your own)</span></p>
       <a class="gle__more" href="{{ '/teaching/' | relative_url }}">More in Teaching &rarr;</a>
     </div>
   </div>
@@ -109,7 +109,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Talks</div>
     <div class="gle__rowbody">
-      <p class="gle__text">Presentations at CREM seminars and doctoral workshops. <span class="gle__muted">(replace with your own)</span></p>
+      <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work. Further presentations are scheduled for the current year.</span></p>
       <a class="gle__more" href="{{ '/talks/' | relative_url }}">More in Talks &rarr;</a>
     </div>
   </div>
@@ -117,7 +117,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row gle__row--now">
     <div class="gle__rowlabel gle__rowlabel--now">Now</div>
     <div class="gle__rowbody">
-      <p class="gle__text">Building a new environmental-exposure dataset &middot; rereading Deaton&rsquo;s <em>The Great Escape</em> &middot; Brittany by bike on weekends. <span class="gle__muted">(make this yours)</span></p>
+      <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.<span class="gle__muted">(make this yours)</span></p>
     </div>
   </div>
 
