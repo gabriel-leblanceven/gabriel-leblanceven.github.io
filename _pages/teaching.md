@@ -68,7 +68,8 @@ body{padding-top:0 !important;}
         {% for c in grp.items %}
           <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDEEF1;">
             <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
-            <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:6px;">{{ c.level }} &middot; {{ c.role }} &middot; {{ c.institution }}</div>
+            <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:6px;">{{ c.level }} &middot; {{ c.role }}</div>
+            <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#6a7078;margin-top:3px;">{{ c.institution }}</div>
             <div style="font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:10px;max-width:620px;">{{ c.description }}</div>
           </div>
         {% endfor %}
