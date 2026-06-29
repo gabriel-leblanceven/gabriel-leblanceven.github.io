@@ -38,8 +38,8 @@ layout: single
 .gle__rowlabel--now{color:#c8921a;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
 .gle__text{font-size:15.5px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
-.gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;}
-.gle__more:hover{color:#c8921a;}
+.gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;text-decoration:none !important;}
+.gle__more:hover{color:#c8921a;text-decoration:none !important;}
 .gle__muted{color:#9aa3b0;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
@@ -100,18 +100,18 @@ html, body{margin:0 !important;padding:0 !important;}
   </div>
 
   <div class="gle__row">
-    <div class="gle__rowlabel">Teaching</div>
-    <div class="gle__rowbody">
-      <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics.</p>
-      <a class="gle__more" href="{{ '/teaching/' | relative_url }}">More in Teaching &rarr;</a>
-    </div>
-  </div>
-
-  <div class="gle__row">
     <div class="gle__rowlabel">Talks</div>
     <div class="gle__rowbody">
       <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work. Further presentations are scheduled for the current year.</p>
       <a class="gle__more" href="{{ '/talks/' | relative_url }}">More in Talks &rarr;</a>
+    </div>
+  </div>
+
+  <div class="gle__row">
+    <div class="gle__rowlabel">Teaching</div>
+    <div class="gle__rowbody">
+      <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics.</p>
+      <a class="gle__more" href="{{ '/teaching/' | relative_url }}">More in Teaching &rarr;</a>
     </div>
   </div>
 
