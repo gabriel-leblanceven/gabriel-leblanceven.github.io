@@ -101,7 +101,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Teaching</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics. <span class="gle__muted">(replace with your own)</span></p>
+      <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics.</p>
       <a class="gle__more" href="{{ '/teaching/' | relative_url }}">More in Teaching &rarr;</a>
     </div>
   </div>
@@ -117,7 +117,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row gle__row--now">
     <div class="gle__rowlabel gle__rowlabel--now">Now</div>
     <div class="gle__rowbody">
-      <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.<span class="gle__muted">(make this yours)</span></p>
+      <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
     </div>
   </div>
 
