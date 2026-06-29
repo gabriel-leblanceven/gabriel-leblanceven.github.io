@@ -33,7 +33,7 @@ layout: single
 .gle__btn{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
 .gle__btn:hover{background:#324f6b;color:#c8921a !important;border-color:#324f6b;text-decoration:none !important;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
-.gle__row--now{border-bottom:1px solid #324f6b;}
+.gle__row--now{border-bottom:1px solid #324f6b;background:rgba(200,146,26,0.06);}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowlabel--now{color:#c8921a;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
@@ -80,7 +80,7 @@ html, body{margin:0 !important;padding:0 !important;}
       <div class="gle__kicker">PhD Candidate in Economics</div>
       <h1 class="gle__name">Gabriel<br>Leblanc-Even</h1>
       <div class="gle__affil">CREM &middot; CNRS UMR 6211 &mdash; University of Rennes<br>Supervised by Josselin Thuilliez (CNRS)</div>
-      <p class="gle__lede">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies - not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions</p>
+      <p class="gle__lede">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies &mdash; not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions.</p>
       <div class="gle__links">
         <a class="gle__btn" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
