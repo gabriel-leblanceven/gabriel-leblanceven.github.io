@@ -71,6 +71,7 @@ body{padding-top:0 !important;}
           <div class="gle__item">
             <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ t.title }}</div>
             <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:4px;">{{ t.place }}</div>
+            {% if t.url %}<a href="{{ t.url }}" target="_blank" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;margin-top:8px;display:inline-block;">Watch recording ↗</a>{% endif %}
           </div>
         {% endfor %}
       </div>
