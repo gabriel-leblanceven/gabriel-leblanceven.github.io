@@ -83,8 +83,7 @@ html, body{margin:0 !important;padding:0 !important;}
       <div class="gle__affil">CREM &middot; CNRS UMR 6211 &mdash; University of Rennes<br>Supervised by Josselin Thuilliez (CNRS)</div>
       <p class="gle__lede">Health economics at the edge of epidemiology and public policy. I study how environmental shocks and intergenerational dynamics shape health and socioeconomic outcomes &mdash; and how public policies interact in shaping it.</p>
       <div class="gle__links">
-        <a class="gle__btn gle__btn--primary" href="{{ '/cv/' | relative_url }}">Curriculum Vitae</a>
-        <a class="gle__btn" href="https://scholar.google.com/">Scholar</a>
+        <a class="gle__btn gle__btn--primary" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
         <a class="gle__btn" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="gle__btn" href="https://github.com/gabriel-leblanceven">GitHub</a>
