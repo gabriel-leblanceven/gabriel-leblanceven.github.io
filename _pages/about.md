@@ -28,7 +28,7 @@ layout: single
 .gle__kicker{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__name{font-family:'Newsreader',serif;font-size:54px;font-weight:500;letter-spacing:-0.005em;line-height:1.0;margin:14px 0 0;color:#324f6b;}
 .gle__affil{font-size:13.5px;color:#6a7078;line-height:1.6;margin-top:18px;}
-.gle__lede{font-size:15.5px;line-height:1.65;color:#2a2f36;max-width:560px;margin-top:20px;}
+.gle__lede{font-size:15.5px;line-height:1.65;color:#2a2f36;max-width:560px;margin-top:20px;text-align:justify;}
 .gle__links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
 .gle__btn{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
 .gle__btn:hover{background:#324f6b;color:#c8921a !important;border-color:#324f6b;text-decoration:none !important;}
@@ -37,7 +37,7 @@ layout: single
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowlabel--now{color:#c8921a;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
-.gle__text{font-size:15.5px;color:#2a2f36;line-height:1.65;max-width:620px;}
+.gle__text{font-size:15.5px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
 .gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;}
 .gle__more:hover{color:#c8921a;}
 .gle__muted{color:#9aa3b0;}
