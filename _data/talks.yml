@@ -1,11 +1,19 @@
 - year: 2026
-  title: "Talk title 1"
-  place: "Event / venue, City"
+  title: "Colloque Chlordécone "Comprendre & Agir""
+  place: "Fort-de-France, Martinique"
 
 - year: 2026
-  title: "Talk title 2"
-  place: "CREM internal seminar, Rennes"
+  title: "CREM Seminar"
+  place: "University of Rennes"
+  
+- year: 2025
+  title: "Summer School "Chlordécone", organized by the Comité de Pilotage Scientifique National of the Stratégie Chlordécone (French Governement Plan)"
+  place: "IRSET, Rennes"
 
 - year: 2025
-  title: "Talk title 3"
-  place: "Doctoral workshop, City"
+  title: "CREM PhD Seminar"
+  place: "University of Rennes"
+
+- year: 2024
+  title: "CREM Research Thematic Day"
+  place: "University of Rennes"
