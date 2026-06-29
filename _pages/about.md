@@ -109,7 +109,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Talks</div>
     <div class="gle__rowbody">
-      <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work. Further presentations are scheduled for the current year.</span></p>
+      <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work. Further presentations are scheduled for the current year.</p>
       <a class="gle__more" href="{{ '/talks/' | relative_url }}">More in Talks &rarr;</a>
     </div>
   </div>
