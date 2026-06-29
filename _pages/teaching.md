@@ -56,7 +56,7 @@ body{padding-top:0 !important;}
     <div></div>
     <div class="gle__titlebody">
       <h1 class="gle__h1">Teaching</h1>
-      <div class="gle__intro">Courses I teach as a teaching assistant at the University of Rennes.</div>
+      <div class="gle__intro">Courses I gave by year.</div>
     </div>
   </div>
 
