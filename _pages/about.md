@@ -30,9 +30,8 @@ layout: single
 .gle__affil{font-size:13.5px;color:#6a7078;line-height:1.6;margin-top:18px;}
 .gle__lede{font-size:15.5px;line-height:1.65;color:#2a2f36;max-width:560px;margin-top:20px;}
 .gle__links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
-.gle__btn{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #d7dade;padding:9px 15px;}
-.gle__btn--primary{border-color:#324f6b;}
-.gle__btn:hover{background:#324f6b;color:#fff;border-color:#324f6b;}
+.gle__btn{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
+.gle__btn:hover{background:#324f6b;color:#c8921a !important;border-color:#324f6b;text-decoration:none !important;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__row--now{border-bottom:1px solid #324f6b;}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
@@ -83,7 +82,7 @@ html, body{margin:0 !important;padding:0 !important;}
       <div class="gle__affil">CREM &middot; CNRS UMR 6211 &mdash; University of Rennes<br>Supervised by Josselin Thuilliez (CNRS)</div>
       <p class="gle__lede">Health economics at the edge of epidemiology and public policy. I study how environmental shocks and intergenerational dynamics shape health and socioeconomic outcomes &mdash; and how public policies interact in shaping it.</p>
       <div class="gle__links">
-        <a class="gle__btn gle__btn--primary" href="{{ '/cv/' | relative_url }}">CV</a>
+        <a class="gle__btn" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
         <a class="gle__btn" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="gle__btn" href="https://github.com/gabriel-leblanceven">GitHub</a>
