@@ -5,9 +5,9 @@
   year: "2025-2026"
   description: "Short description of the course content and your role."
 
-- title: "Course title 2"
-  level: "L3"
-  role: "TA"
-  institution: "University of Rennes"
+- title: "Macroeconomics"
+  level: "First-year Undergraduate (L1) - Prof. Chantal Gueguen
+  role: "Tutorial (24h) in French"
+  institution: "Faculty of Economics, University of Rennes"
   year: "2024-2025"
-  description: "Short description of the course content and your role."
+  description: "This tutorial supports group projects in which students compare key macroeconomic indicators across two economies and construct an Excel-based dashboard. It combines theoretical foundations with practical data analysis. Students present their results in a final presentation. "
