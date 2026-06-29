@@ -100,6 +100,37 @@ body{padding-top:0 !important;}
     </div>
   </div>
 
+<div class="gle__row">
+    <div class="gle__rowlabel">Grants & awards</div>
+    <div class="gle__rowbody">
+
+      <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;margin-bottom:24px;">
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:#c8921a;font-weight:700;">2025</div>
+        <div>
+          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">Winner, Starthèse Bretagne</div>
+          <div style="font-family:'Public Sans',sans-serif;font-size:13px;color:#6a7078;margin-top:3px;font-style:italic;">Entrepreneurial competition, Brittany</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;margin-bottom:24px;">
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:#c8921a;font-weight:700;">2024</div>
+        <div>
+          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">Doctoral fellowship</div>
+          <div style="font-family:'Public Sans',sans-serif;font-size:13px;color:#6a7078;margin-top:3px;font-style:italic;">University of Rennes</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;">
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:#c8921a;font-weight:700;">2019</div>
+        <div>
+          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">Finalist, Concours Audace</div>
+          <div style="font-family:'Public Sans',sans-serif;font-size:13px;color:#6a7078;margin-top:3px;font-style:italic;">Entrepreneurial competition, Audencia Business School</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <div class="gle__footer">
     <span>gabriel.leblanc-even@univ-rennes.fr</span>
     <span>Rennes, France &middot; &copy; {{ 'now' | date: "%Y" }}</span>
