@@ -24,7 +24,7 @@ layout: single
 .gle__bar{height:3px;background:#c8921a;}
 .gle__hero{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__photo{width:100%;height:100%;min-height:380px;object-fit:cover;border-right:1px solid #E3E5E9;display:block;background:#f2f3f5;}
-.gle__herobody{padding:48px 56px 50px 40px;}
+.gle__herobody{padding:28px 56px 50px 40px;}
 .gle__kicker{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;line-height:2;}
 .gle__name{font-family:'Newsreader',serif;font-size:54px;font-weight:500;letter-spacing:-0.005em;line-height:1.0;margin:14px 0 0;color:#324f6b;}
 .gle__supervisor{font-size:16px;color:#324f6b;line-height:1.5;margin-top:14px;font-style:italic;margin-bottom:16px;}
