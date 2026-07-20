@@ -77,9 +77,9 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__hero">
     <img class="gle__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Gabriel Leblanc-Even">
     <div class="gle__herobody">
+      <h1 class="gle__name">Gabriel<br>Leblanc-Even</h1>
       <div class="gle__kicker">PhD Candidate in Economics</div>
       <div class="gle__kicker">CREM &middot; CNRS UMR 6211 &middot; University of Rennes</div>
-      <h1 class="gle__name">Gabriel<br>Leblanc-Even</h1>
       <div class="gle__supervisor">Supervised by Josselin Thuilliez (DR CNRS)</div>
       <p class="gle__lede">My research examines how environmental shocks and intergenerational dynamics influence individuals' health and shape their socioeconomic outcomes. I am also interested in the interaction of multiple public policies &mdash; not only evaluating their individual effects but also investigating their combined or offsetting impacts, particularly on health-related decisions.</p>
       <div class="gle__links">
