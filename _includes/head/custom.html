@@ -2,7 +2,7 @@
 <!-- start custom head snippets -->
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-<!-- GLE favicon: Space Mono Bold "G", navy #324f6b with ochre #c8921a bar -->
+<!-- GLE favicon: filled version of the GLE monogram (see _includes/gle-logo.html) -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
@@ -24,5 +24,11 @@
 html, body { margin: 0 !important; padding: 0 !important; }
 #main { margin-top: 0 !important; margin-bottom: 0 !important; }
 .page__inner-wrap > header, .page__meta { display: none !important; }
+/* GLE monogram (see _includes/gle-logo.html); nav padding keeps the header height unchanged */
+.gle__nav { padding-top: 18px !important; padding-bottom: 18px !important; }
+.gle__logo { line-height: 0; }
+.gle__mark { display: block; }
+.gle__mark-ring { transition: stroke .2s; }
+.gle__logo a:hover .gle__mark-ring { stroke: #c8921a; }
 </style>
 {% endif %}

@@ -48,7 +48,7 @@ body{padding-top:0 !important;}
 </style>
 
 <div class="gle__nav">
-  <div class="gle__logo"><a href="{{ '/' | relative_url }}"><span class="g">G</span><span class="le">LE</span></a></div>
+  {% include gle-logo.html %}
   <nav class="gle__navlinks">
     <a href="{{ '/research/' | relative_url }}" class="is-active">Research</a>
     <a href="{{ '/talks/'    | relative_url }}">Talks</a>
