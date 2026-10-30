@@ -85,6 +85,7 @@ html, body{margin:0 !important;padding:0 !important;}
       <div class="gle__links">
         <a class="gle__btn" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
+        <a class="gle__btn" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="gle__btn" href="https://github.com/gabriel-leblanceven">GitHub</a>
       </div>
     </div>
