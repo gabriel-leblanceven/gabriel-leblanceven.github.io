@@ -18,5 +18,11 @@
 
 <!-- GLE — hide theme masthead on pages that ship their own nav -->
 {% if page.hide_masthead %}
-<style>.masthead { display: none; }</style>
+<style>
+.masthead { display: none; }
+/* Remove theme spacing above the GLE nav and below the GLE footer */
+html, body { margin: 0 !important; padding: 0 !important; }
+#main { margin-top: 0 !important; margin-bottom: 0 !important; }
+.page__inner-wrap > header, .page__meta { display: none !important; }
+</style>
 {% endif %}
