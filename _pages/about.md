@@ -42,7 +42,9 @@ layout: single
 .gle__nownext{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:-2px;padding:4px 6px;background:none;border:0;cursor:pointer;color:#324f6b;}
 .gle__nownext-arrow{font-family:'Space Mono',monospace;font-size:20px;line-height:1;transition:transform .2s,color .2s;}
 .gle__nownext:hover .gle__nownext-arrow,.gle__nownext:focus-visible .gle__nownext-arrow{color:#c8921a;transform:translateX(3px);}
-.gle__nownext-count{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#8a9099;}
+.gle__nowdots{display:flex;gap:5px;}
+.gle__nowdots i{display:block;width:6px;height:6px;border-radius:50%;background:#d5d9df;transition:background .2s;}
+.gle__nowdots i.is-active{background:#c8921a;}
 .gle__slides{display:flex;align-items:flex-start;transition:height .3s;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;outline:none;}
 .gle__slides::-webkit-scrollbar{display:none;}
 .gle__slide{flex:0 0 100%;scroll-snap-align:start;}
@@ -145,13 +147,13 @@ html, body{margin:0 !important;padding:0 !important;}
         <div class="gle__slide" data-label="Now" role="group" aria-roledescription="slide" aria-label="1 of 2">
           <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
         </div>
-        <div class="gle__slide" data-label="The logo" role="group" aria-roledescription="slide" aria-label="2 of 2">
+        <div class="gle__slide" data-label="The Monogram" role="group" aria-roledescription="slide" aria-label="2 of 2">
           <p class="gle__text">If you've been wondering about the logo in the top-left corner: it is my personal monogram (GLE). As an art lover with a soft spot for Impressionism &mdash; and having previously worked at the Mus&eacute;e d'Orsay &mdash; I adapted it from Henri de Toulouse-Lautrec's iconic circular monogram. It is a small personal, historical touch on an otherwise academic website. And yes, it also doubles as a &ldquo;Home&rdquo; button!</p>
         </div>
       </div>
       <button type="button" class="gle__nownext" id="gle-next" aria-label="Next">
         <span class="gle__nownext-arrow" aria-hidden="true">&rarr;</span>
-        <span class="gle__nownext-count" id="gle-count">1/2</span>
+        <span class="gle__nowdots" id="gle-dots" aria-hidden="true"></span>
       </button>
     </div>
   </div>
@@ -168,16 +170,18 @@ html, body{margin:0 !important;padding:0 !important;}
   if (!box) return;
   var slides = box.querySelectorAll('.gle__slide');
   var label = document.getElementById('gle-now-label');
-  var next = document.getElementById('gle-next'), count = document.getElementById('gle-count');
+  var next = document.getElementById('gle-next'), dots = document.getElementById('gle-dots');
   var n = slides.length, idx = 0, settle;
   if (n < 2) { next.style.display = 'none'; return; }
+  for (var i = 0; i < n; i++) dots.appendChild(document.createElement('i'));
   function current(){ return Math.round(box.scrollLeft / box.clientWidth); }
   /* Render slide k right away on click or key; swipes are picked up once scrolling settles */
   function render(k){
     idx = k;
     label.textContent = slides[k].getAttribute('data-label');
     box.style.height = slides[k].offsetHeight + 'px';
-    count.textContent = (k + 1) + '/' + n;
+    for (var j = 0; j < n; j++) dots.children[j].classList.toggle('is-active', j === k);
+    next.setAttribute('aria-label', 'Next (' + (k + 1) + ' of ' + n + ')');
   }
   function go(k){
     k = (k + n) % n;
