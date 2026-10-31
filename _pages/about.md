@@ -25,9 +25,10 @@ layout: single
 .gle__hero{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__photo{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:center 20%;border-right:1px solid #E3E5E9;display:block;background:#f2f3f5;}
 .gle__herobody{padding:28px 56px 50px 40px;}
-.gle__kicker{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;line-height:2;}
-.gle__name{font-family:'Newsreader',serif;font-size:52px;font-weight:500;letter-spacing:-0.005em;line-height:1.0;margin:14px 0 0;color:#324f6b;}
-.gle__supervisor{font-size:14px;color:#324f6b;line-height:1.5;margin-top:14px;font-style:italic;margin-bottom:16px;}
+.gle__kicker{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#c8921a;line-height:2;}
+.gle__herobody .gle__kicker:first-of-type{color:#324f6b;}
+.gle__name{font-family:'Newsreader',serif;font-size:42px;font-weight:400;letter-spacing:-0.005em;line-height:1.0;margin:14px 0 0;color:#324f6b;}
+.gle__supervisor{font-size:14px;color:#6a7078;line-height:1.5;margin-top:8px;margin-bottom:16px;}
 .gle .gle__lede{font-size:16px;line-height:1.65;color:#2a2f36;max-width:560px;margin-top:0;text-align:justify;}
 .gle__links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
 .gle__btn{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
