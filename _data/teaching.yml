@@ -5,6 +5,13 @@
   year: "2026-2027"
   description: "These tutorials help ENSAI students deepen their command of econometric techniques and causal inference methods."
 
+- title: "Macroeconomics"
+  level: "Second-year Undergraduate (L2)"
+  role: "Tutorial (36h) in French"
+  institution: "Faculty of Economics, University of Rennes"
+  year: "2026-2027"
+  description: "This tutorial supports group projects in which students analyse a macroeconomic crisis using tools covered in the course. Students are expected to connect their work to macroeconomic theories and produce a structured analysis of the chosen crisis."
+
 - title: "Health Economics"
   level: "Master in Public Health (1st-year)"
   role: "Lecture (12h) in English"
@@ -19,7 +26,7 @@
   year: "2025-2026"
   description: "This tutorial is designed for students in the ENSAI–Paris Dauphine double degree programme to strengthen their understanding of econometrics at undergraduate level in economics."
 
-- title: "Macroeconomics - International Track"
+- title: "Macroeconomics"
   level: "Second-year Undergraduate (L2)"
   role: "Tutorial (36h) in French"
   institution: "Faculty of Economics, University of Rennes"
