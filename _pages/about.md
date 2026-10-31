@@ -178,20 +178,26 @@ html, body{margin:0 !important;padding:0 !important;}
     d.addEventListener('click', (function(k){ return function(){ go(k); }; })(i));
     dots.appendChild(d);
   }
+  var idx = 0, settle;
   function current(){ return Math.round(box.scrollLeft / box.clientWidth); }
-  function go(k){ k = Math.max(0, Math.min(slides.length - 1, k)); box.scrollTo({ left: k * box.clientWidth, behavior: 'smooth' }); }
-  function update(){
-    var k = current();
+  /* Render slide k right away (arrows, dots, keys); swipes are picked up once scrolling settles */
+  function render(k){
+    idx = k;
     label.textContent = slides[k].getAttribute('data-label');
     box.style.height = slides[k].offsetHeight + 'px';
     for (var j = 0; j < dots.children.length; j++) dots.children[j].classList.toggle('is-active', j === k);
     prev.disabled = k === 0; next.disabled = k === slides.length - 1;
   }
-  prev.addEventListener('click', function(){ go(current() - 1); });
-  next.addEventListener('click', function(){ go(current() + 1); });
-  box.addEventListener('keydown', function(e){ if (e.key === 'ArrowLeft') go(current() - 1); if (e.key === 'ArrowRight') go(current() + 1); });
-  box.addEventListener('scroll', function(){ window.requestAnimationFrame(update); });
-  window.addEventListener('resize', update);
-  update();
+  function go(k){
+    k = Math.max(0, Math.min(slides.length - 1, k));
+    box.scrollTo({ left: k * box.clientWidth, behavior: 'smooth' });
+    render(k);
+  }
+  prev.addEventListener('click', function(){ go(idx - 1); });
+  next.addEventListener('click', function(){ go(idx + 1); });
+  box.addEventListener('keydown', function(e){ if (e.key === 'ArrowLeft') go(idx - 1); if (e.key === 'ArrowRight') go(idx + 1); });
+  box.addEventListener('scroll', function(){ clearTimeout(settle); settle = setTimeout(function(){ render(current()); }, 120); });
+  window.addEventListener('resize', function(){ box.scrollLeft = idx * box.clientWidth; render(idx); });
+  render(0);
 })();
 </script>
