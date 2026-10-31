@@ -77,7 +77,7 @@ body{padding-top:0 !important;}
   .gle__row--link .gle__rowlabel{grid-column:1 / -1;}
   .gle__go{padding:0 20px 0 0;}
   .gle__hero,.gle__row{grid-template-columns:1fr;}
-  .gle__photo{min-height:280px;border-right:none;border-bottom:1px solid #E3E5E9;}
+  .gle__photo{height:260px;min-height:0;object-position:center 8%;border-right:none;border-bottom:1px solid #E3E5E9;}
   .gle__herobody,.gle__rowbody{padding:28px 24px;}
   .gle__rowlabel{padding:24px 0 0 24px;}
   .gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}
@@ -102,7 +102,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__hero">
     <img class="gle__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Gabriel Leblanc-Even">
     <div class="gle__herobody">
-      <h1 class="gle__name">Gabriel Leblanc-Even</h1>
+      <h1 class="gle__name">Gabriel <span style="white-space:nowrap;">Leblanc-Even</span></h1>
       <div class="gle__kicker" style="margin-top: 14px;">PhD Candidate in Economics</div>
       <div class="gle__kicker">CREM &middot; CNRS UMR 6211 &middot; University of Rennes</div>
       <div class="gle__supervisor">Supervised by Josselin Thuilliez (DR CNRS)</div>
