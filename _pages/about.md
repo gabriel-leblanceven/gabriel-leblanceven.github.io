@@ -33,8 +33,7 @@ layout: single
 .gle__btn{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
 .gle__btn:hover{background:#324f6b;color:#c8921a !important;border-color:#324f6b;text-decoration:none !important;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
-.gle__row--link{grid-template-columns:280px 1fr auto;color:inherit;text-decoration:none !important;transition:background .2s;}
-.gle__row--link:hover{background:rgba(200,146,26,0.04);}
+.gle__row--link{grid-template-columns:280px 1fr auto;color:inherit;text-decoration:none !important;}
 .gle__seal{display:flex;align-items:center;justify-content:center;padding:0 40px;}
 .gle__seal svg{display:block;}
 .gle__seal-ring{transform-origin:50px 50px;transition:transform .8s ease;}
@@ -79,7 +78,7 @@ body{padding-top:0 !important;}
 @media (max-width:720px){
   .gle__row--link{grid-template-columns:1fr;}
   .gle__seal{justify-content:flex-start;padding:0 24px 24px;}
-  .gle__seal svg{width:72px;height:72px;}
+  .gle__seal svg{width:60px;height:60px;}
   .gle__nownext{margin:-28px -24px -28px 0;padding:0 20px;}
   .gle__hero,.gle__row{grid-template-columns:1fr;}
   .gle__photo{min-height:280px;border-right:none;border-bottom:1px solid #E3E5E9;}
