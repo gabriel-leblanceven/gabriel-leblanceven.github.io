@@ -62,7 +62,25 @@ body{padding-top:0 !important;}
     </div>
   </div>
 
-  {% assign byyear = site.data.talks | group_by: "year" | sort: "name" | reverse %}
+  {% comment %} Talks flagged `upcoming: true` in _data/talks.yml are listed first; remove the flag once the event has taken place {% endcomment %}
+  {% assign upcoming = site.data.talks | where_exp: "t", "t.upcoming == true" %}
+  {% if upcoming.size > 0 %}
+    <div class="gle__row" style="background:rgba(200,146,26,0.06);">
+      <div class="gle__rowlabel" style="color:#c8921a;">Upcoming</div>
+      <div class="gle__rowbody">
+        {% for t in upcoming %}
+          <div class="gle__item">
+            <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ t.title }}</div>
+            <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:4px;">{% if t.date %}{{ t.date }} &middot; {% endif %}{{ t.place }}</div>
+            {% if t.url %}<a href="{{ t.url }}" target="_blank" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;margin-top:8px;display:inline-block;">Conference website ↗</a>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% assign past = site.data.talks | where_exp: "t", "t.upcoming != true" %}
+  {% assign byyear = past | group_by: "year" | sort: "name" | reverse %}
   {% for grp in byyear %}
     <div class="gle__row">
       <div class="gle__rowlabel">{{ grp.name }}</div>

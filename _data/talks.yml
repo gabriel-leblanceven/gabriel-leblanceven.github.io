@@ -1,4 +1,10 @@
 - year: 2026
+  upcoming: true
+  date: "2–4 December 2026"
+  title: "48e Journées des Économistes de la Santé Français"
+  place: "Montpellier"
+
+- year: 2026
   title: "4e Journée Annuelle du réseau Exposome Environnemental et Sociétal - Cancéropôle Grand Ouest"
   place: "Institut de Recherche en Santé, Nantes"
 
