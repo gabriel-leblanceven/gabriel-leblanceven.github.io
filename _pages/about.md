@@ -53,6 +53,9 @@ layout: single
 .gle__go{display:flex;align-items:center;justify-content:center;padding:0 40px;}
 .gle__go svg{display:block;color:#324f6b;transition:color .2s;}
 .gle__go-arrow{transition:transform .2s;}
+.gle__go text{opacity:0;transition:opacity .25s;}
+.gle__row--link:hover .gle__go text,.gle__row--link:focus-visible .gle__go text{opacity:1;}
+@media (hover:none){.gle__go text{opacity:1;}}
 .gle__row--link:hover .gle__go svg,.gle__row--link:focus-visible .gle__go svg{color:#c8921a;}
 .gle__row--link:hover .gle__go-arrow,.gle__row--link:focus-visible .gle__go-arrow{transform:translateX(1px);}
 .gle__next{margin-top:14px;padding:12px 14px;border-left:2px solid #c8921a;background:rgba(200,146,26,0.08);}
