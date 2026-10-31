@@ -25,13 +25,12 @@ layout: single
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowbody{padding:20px 56px 24px 40px;}
-.gle__ctitle{font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;transition:color .2s;}
+.gle__ctitle{font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;}
 .gle__desc summary{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;cursor:pointer;list-style:none;}
 .gle__desc summary::-webkit-details-marker{display:none;}
 .gle__desc summary:focus-visible{outline:2px solid #c8921a;outline-offset:4px;}
 .gle__desc-chev{flex:0 0 auto;width:9px;height:9px;margin-top:8px;border-right:1.4px solid #324f6b;border-bottom:1.4px solid #324f6b;transform:rotate(45deg);transition:transform .2s,border-color .2s;}
 .gle__desc[open] .gle__desc-chev{transform:rotate(-135deg);margin-top:12px;}
-.gle__desc summary:hover .gle__ctitle{color:#c8921a;}
 .gle__desc summary:hover .gle__desc-chev{border-color:#c8921a;}
 .gle__desc-body{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:620px;text-align:justify;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
