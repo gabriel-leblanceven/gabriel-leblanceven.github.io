@@ -37,14 +37,10 @@ layout: single
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowlabel--now{color:#c8921a;}
 .gle__row--now .gle__rowbody{min-width:0;}
-.gle__nowbody{display:flex;align-items:stretch;gap:24px;}
-.gle__nowbody .gle__slides{flex:1;min-width:0;align-self:flex-start;}
-.gle__nownext{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:-32px -56px -34px 0;padding:0 40px;background:none;border:0;cursor:pointer;color:#324f6b;transition:background .2s;}
-.gle__nownext:hover{background:rgba(200,146,26,0.08);}
-.gle__nowcircle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid #324f6b;border-radius:50%;color:#324f6b;transition:border-color .2s,color .2s;}
-.gle__nowcircle svg{display:block;transition:transform .2s;}
-.gle__nownext:hover .gle__nowcircle,.gle__nownext:focus-visible .gle__nowcircle{border-color:#c8921a;color:#c8921a;}
-.gle__nownext:hover .gle__nowcircle svg,.gle__nownext:focus-visible .gle__nowcircle svg{transform:translateX(1px);}
+.gle__nowctl{display:flex;align-items:center;justify-content:center;gap:14px;max-width:620px;margin-top:10px;}
+.gle__nowbtn{display:flex;align-items:center;justify-content:center;width:22px;height:22px;padding:0;border:1px solid rgba(50,79,107,0.3);border-radius:50%;background:none;color:rgba(50,79,107,0.55);cursor:pointer;transition:border-color .2s,color .2s;}
+.gle__nowbtn svg{display:block;}
+.gle__nowbtn:hover,.gle__nowbtn:focus-visible{border-color:#c8921a;color:#c8921a;}
 .gle__nowdots{display:flex;gap:6px;}
 .gle__nowdots i{display:block;width:7px;height:7px;border-radius:50%;border:1px solid #324f6b;box-sizing:border-box;transition:background .2s,border-color .2s;}
 .gle__nowdots i.is-active{background:#c8921a;border-color:#c8921a;}
@@ -55,10 +51,10 @@ layout: single
 .gle .gle__text{font-size:16px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
 .gle__row--link{grid-template-columns:280px 1fr auto;color:inherit;text-decoration:none !important;}
 .gle__go{display:flex;align-items:center;justify-content:center;padding:0 40px;}
-.gle__gocircle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid #324f6b;border-radius:50%;color:#324f6b;transition:border-color .2s,color .2s;}
-.gle__gocircle svg{display:block;transition:transform .2s;}
-.gle__row--link:hover .gle__gocircle,.gle__row--link:focus-visible .gle__gocircle{border-color:#c8921a;color:#c8921a;}
-.gle__row--link:hover .gle__gocircle svg,.gle__row--link:focus-visible .gle__gocircle svg{transform:translateX(1px);}
+.gle__go svg{display:block;color:#324f6b;transition:color .2s;}
+.gle__go-arrow{transition:transform .2s;}
+.gle__row--link:hover .gle__go svg,.gle__row--link:focus-visible .gle__go svg{color:#c8921a;}
+.gle__row--link:hover .gle__go-arrow,.gle__row--link:focus-visible .gle__go-arrow{transform:translateX(1px);}
 .gle__next{margin-top:14px;padding:12px 14px;border-left:2px solid #c8921a;background:rgba(200,146,26,0.08);}
 .gle__next-label{display:block;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__next-title{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:500;color:#324f6b;line-height:1.3;margin-top:4px;}
@@ -74,7 +70,6 @@ body{padding-top:0 !important;}
 .page__footer{display:none !important;}
 .footer{display:none !important;}
 @media (max-width:720px){
-  .gle__nownext{margin:-28px -24px -28px 0;padding:0 20px;}
   .gle .gle__row--link{grid-template-columns:1fr auto;}
   .gle__row--link .gle__rowlabel{grid-column:1 / -1;}
   .gle__go{padding:0 20px 0 0;}
@@ -124,7 +119,7 @@ html, body{margin:0 !important;padding:0 !important;}
     <div class="gle__rowbody">
       <p class="gle__text">My primary research agenda lies in health economics, closely connected to epidemiology, with a strong interest in development economics and how public policies can shape human societies.</p>
     </div>
-    <span class="gle__go" aria-hidden="true"><span class="gle__gocircle"><svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7 H12 M8 3 L12 7 L8 11"/></svg></span></span>
+    <span class="gle__go" aria-hidden="true"><svg width="60" height="66" viewBox="0 0 60 66" fill="none" focusable="false"><defs><path id="gle-explore-research" d="M5,42 A25,25 0 0 1 55,42"/></defs><text font-family="Space Mono, monospace" font-size="8.5" letter-spacing="1.8" fill="currentColor"><textPath href="#gle-explore-research" startOffset="50%" text-anchor="middle">EXPLORE</textPath></text><circle cx="30" cy="42" r="18.25" stroke="currentColor" stroke-width="1.5"/><g class="gle__go-arrow"><path d="M23.5 42 H36.5 M32 37.5 L36.5 42 L32 46.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
   </a>
 
   <a class="gle__row gle__row--link" href="{{ '/talks/' | relative_url }}" aria-label="More in Talks">
@@ -140,7 +135,7 @@ html, body{margin:0 !important;padding:0 !important;}
         </div>
       {% endfor %}
     </div>
-    <span class="gle__go" aria-hidden="true"><span class="gle__gocircle"><svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7 H12 M8 3 L12 7 L8 11"/></svg></span></span>
+    <span class="gle__go" aria-hidden="true"><svg width="60" height="66" viewBox="0 0 60 66" fill="none" focusable="false"><defs><path id="gle-explore-talks" d="M5,42 A25,25 0 0 1 55,42"/></defs><text font-family="Space Mono, monospace" font-size="8.5" letter-spacing="1.8" fill="currentColor"><textPath href="#gle-explore-talks" startOffset="50%" text-anchor="middle">EXPLORE</textPath></text><circle cx="30" cy="42" r="18.25" stroke="currentColor" stroke-width="1.5"/><g class="gle__go-arrow"><path d="M23.5 42 H36.5 M32 37.5 L36.5 42 L32 46.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
   </a>
 
   <a class="gle__row gle__row--link" href="{{ '/teaching/' | relative_url }}" aria-label="More in Teaching">
@@ -148,13 +143,13 @@ html, body{margin:0 !important;padding:0 !important;}
     <div class="gle__rowbody">
       <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics.</p>
     </div>
-    <span class="gle__go" aria-hidden="true"><span class="gle__gocircle"><svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7 H12 M8 3 L12 7 L8 11"/></svg></span></span>
+    <span class="gle__go" aria-hidden="true"><svg width="60" height="66" viewBox="0 0 60 66" fill="none" focusable="false"><defs><path id="gle-explore-teaching" d="M5,42 A25,25 0 0 1 55,42"/></defs><text font-family="Space Mono, monospace" font-size="8.5" letter-spacing="1.8" fill="currentColor"><textPath href="#gle-explore-teaching" startOffset="50%" text-anchor="middle">EXPLORE</textPath></text><circle cx="30" cy="42" r="18.25" stroke="currentColor" stroke-width="1.5"/><g class="gle__go-arrow"><path d="M23.5 42 H36.5 M32 37.5 L36.5 42 L32 46.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
   </a>
 
-  <!-- Now block: slides cycled by a single "next" control (loops back to the first); the row label follows the current slide's data-label -->
+  <!-- Now block: slides cycled by light prev/next circles around centred dots (both loop); the row label follows the current slide's data-label -->
   <div class="gle__row gle__row--now">
     <div class="gle__rowlabel gle__rowlabel--now" id="gle-now-label">Now</div>
-    <div class="gle__rowbody gle__nowbody">
+    <div class="gle__rowbody">
       <div class="gle__slides" id="gle-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Now and more">
         <div class="gle__slide" data-label="Now" role="group" aria-roledescription="slide" aria-label="1 of 2">
           <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
@@ -163,10 +158,11 @@ html, body{margin:0 !important;padding:0 !important;}
           <p class="gle__text">If you've been wondering about the logo in the top-left corner: it is my personal monogram (GLE). As an art lover with a soft spot for Impressionism &mdash; and having previously worked at the Mus&eacute;e d'Orsay &mdash; I adapted it from Henri de Toulouse-Lautrec's iconic circular monogram. It is a small personal, historical touch on an otherwise academic website. And yes, it also doubles as a &ldquo;Home&rdquo; button!</p>
         </div>
       </div>
-      <button type="button" class="gle__nownext" id="gle-next" aria-label="Next">
-        <span class="gle__nowcircle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L10 7 L5 12"/></svg></span>
+      <div class="gle__nowctl">
+        <button type="button" class="gle__nowbtn" id="gle-prev" aria-label="Previous"><svg width="10" height="10" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2 L4 7 L9 12"/></svg></button>
         <span class="gle__nowdots" id="gle-dots" aria-hidden="true"></span>
-      </button>
+        <button type="button" class="gle__nowbtn" id="gle-next" aria-label="Next"><svg width="10" height="10" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2 L10 7 L5 12"/></svg></button>
+      </div>
     </div>
   </div>
 
@@ -182,9 +178,9 @@ html, body{margin:0 !important;padding:0 !important;}
   if (!box) return;
   var slides = box.querySelectorAll('.gle__slide');
   var label = document.getElementById('gle-now-label');
-  var next = document.getElementById('gle-next'), dots = document.getElementById('gle-dots');
+  var prev = document.getElementById('gle-prev'), next = document.getElementById('gle-next'), dots = document.getElementById('gle-dots');
   var n = slides.length, idx = 0, settle;
-  if (n < 2) { next.style.display = 'none'; return; }
+  if (n < 2) { next.parentNode.style.display = 'none'; return; }
   for (var i = 0; i < n; i++) dots.appendChild(document.createElement('i'));
   function current(){ return Math.round(box.scrollLeft / box.clientWidth); }
   /* Render slide k right away on click or key; swipes are picked up once scrolling settles */
@@ -193,13 +189,13 @@ html, body{margin:0 !important;padding:0 !important;}
     label.textContent = slides[k].getAttribute('data-label');
     box.style.height = slides[k].offsetHeight + 'px';
     for (var j = 0; j < n; j++) dots.children[j].classList.toggle('is-active', j === k);
-    next.setAttribute('aria-label', 'Next (' + (k + 1) + ' of ' + n + ')');
   }
   function go(k){
     k = (k + n) % n;
     box.scrollTo({ left: k * box.clientWidth, behavior: 'smooth' });
     render(k);
   }
+  prev.addEventListener('click', function(){ go(idx - 1); });
   next.addEventListener('click', function(){ go(idx + 1); });
   box.addEventListener('keydown', function(e){ if (e.key === 'ArrowLeft') go(idx - 1); if (e.key === 'ArrowRight') go(idx + 1); });
   box.addEventListener('scroll', function(){ clearTimeout(settle); settle = setTimeout(function(){ render(current()); }, 120); });
