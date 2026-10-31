@@ -55,7 +55,7 @@ layout: single
 .gle .gle__text{font-size:16px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
 .gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;text-decoration:none !important;}
 .gle__more:hover{color:#c8921a;text-decoration:none !important;}
-.gle__next{margin-top:14px;padding-left:12px;border-left:2px solid #c8921a;}
+.gle__next{margin-top:14px;padding:12px 14px;border-left:2px solid #c8921a;background:rgba(200,146,26,0.08);}
 .gle__next-label{display:block;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__next-title{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:500;color:#324f6b;line-height:1.3;margin-top:4px;}
 .gle__next-meta{display:block;font-size:13px;font-style:italic;color:#6a7078;margin-top:2px;}
