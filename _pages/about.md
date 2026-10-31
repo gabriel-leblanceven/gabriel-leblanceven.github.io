@@ -39,13 +39,15 @@ layout: single
 .gle__row--now .gle__rowbody{min-width:0;}
 .gle__nowbody{display:flex;align-items:stretch;gap:24px;}
 .gle__nowbody .gle__slides{flex:1;min-width:0;align-self:flex-start;}
-.gle__nownext{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;margin:-32px -56px -34px 0;padding:0 40px;background:none;border:0;cursor:pointer;color:#324f6b;transition:background .2s;}
+.gle__nownext{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:-32px -56px -34px 0;padding:0 40px;background:none;border:0;cursor:pointer;color:#324f6b;transition:background .2s;}
 .gle__nownext:hover{background:rgba(200,146,26,0.08);}
-.gle__nownext-arrow{font-family:'Space Mono',monospace;font-size:20px;line-height:1;transition:transform .2s,color .2s;}
-.gle__nownext:hover .gle__nownext-arrow,.gle__nownext:focus-visible .gle__nownext-arrow{color:#c8921a;transform:translateX(3px);}
-.gle__nowdots{display:flex;gap:5px;}
-.gle__nowdots i{display:block;width:6px;height:6px;border-radius:50%;background:#d5d9df;transition:background .2s;}
-.gle__nowdots i.is-active{background:#c8921a;}
+.gle__nowcircle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid #324f6b;border-radius:50%;color:#324f6b;transition:border-color .2s,color .2s;}
+.gle__nowcircle svg{display:block;transition:transform .2s;}
+.gle__nownext:hover .gle__nowcircle,.gle__nownext:focus-visible .gle__nowcircle{border-color:#c8921a;color:#c8921a;}
+.gle__nownext:hover .gle__nowcircle svg,.gle__nownext:focus-visible .gle__nowcircle svg{transform:translateX(1px);}
+.gle__nowdots{display:flex;gap:6px;}
+.gle__nowdots i{display:block;width:7px;height:7px;border-radius:50%;border:1px solid #324f6b;box-sizing:border-box;transition:background .2s,border-color .2s;}
+.gle__nowdots i.is-active{background:#c8921a;border-color:#c8921a;}
 .gle__slides{display:flex;align-items:flex-start;transition:height .3s;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;outline:none;}
 .gle__slides::-webkit-scrollbar{display:none;}
 .gle__slide{flex:0 0 100%;scroll-snap-align:start;}
@@ -154,7 +156,7 @@ html, body{margin:0 !important;padding:0 !important;}
         </div>
       </div>
       <button type="button" class="gle__nownext" id="gle-next" aria-label="Next">
-        <span class="gle__nownext-arrow" aria-hidden="true">&rarr;</span>
+        <span class="gle__nowcircle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L10 7 L5 12"/></svg></span>
         <span class="gle__nowdots" id="gle-dots" aria-hidden="true"></span>
       </button>
     </div>
