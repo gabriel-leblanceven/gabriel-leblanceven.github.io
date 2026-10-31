@@ -33,6 +33,15 @@ layout: single
 .gle__btn{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#324f6b;border:1px solid #324f6b;padding:9px 15px;text-decoration:none !important;}
 .gle__btn:hover{background:#324f6b;color:#c8921a !important;border-color:#324f6b;text-decoration:none !important;}
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
+.gle__row--link{grid-template-columns:280px 1fr auto;color:inherit;text-decoration:none !important;transition:background .2s;}
+.gle__row--link:hover{background:rgba(200,146,26,0.04);}
+.gle__seal{display:flex;align-items:center;justify-content:center;padding:0 40px;}
+.gle__seal svg{display:block;}
+.gle__seal-ring{transform-origin:50px 50px;transition:transform .8s ease;}
+.gle__seal-disc{transition:fill .2s;}
+.gle__row--link:hover .gle__seal-ring,.gle__row--link:focus-visible .gle__seal-ring{transform:rotate(60deg);}
+.gle__row--link:hover .gle__seal-disc,.gle__row--link:focus-visible .gle__seal-disc{fill:#c8921a;}
+@media (prefers-reduced-motion:reduce){.gle__seal-ring{transition:none;}}
 .gle__row--now{border-bottom:1px solid #324f6b;background:rgba(200,146,26,0.06);}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowlabel--now{color:#c8921a;}
@@ -53,8 +62,6 @@ layout: single
 .gle__slide{flex:0 0 100%;scroll-snap-align:start;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
 .gle .gle__text{font-size:16px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
-.gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;text-decoration:none !important;}
-.gle__more:hover{color:#c8921a;text-decoration:none !important;}
 .gle__next{margin-top:14px;padding:12px 14px;border-left:2px solid #c8921a;background:rgba(200,146,26,0.08);}
 .gle__next-label{display:block;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
 .gle__next-title{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:500;color:#324f6b;line-height:1.3;margin-top:4px;}
@@ -70,6 +77,9 @@ body{padding-top:0 !important;}
 .page__footer{display:none !important;}
 .footer{display:none !important;}
 @media (max-width:720px){
+  .gle__row--link{grid-template-columns:1fr;}
+  .gle__seal{justify-content:flex-start;padding:0 24px 24px;}
+  .gle__seal svg{width:72px;height:72px;}
   .gle__nownext{margin:-28px -24px -28px 0;padding:0 20px;}
   .gle__hero,.gle__row{grid-template-columns:1fr;}
   .gle__photo{min-height:280px;border-right:none;border-bottom:1px solid #E3E5E9;}
@@ -111,15 +121,16 @@ html, body{margin:0 !important;padding:0 !important;}
     </div>
   </div>
 
-  <div class="gle__row">
+  <!-- Research / Talks / Teaching rows: the whole row links to its page, with a round "More in ..." seal on the right -->
+  <a class="gle__row gle__row--link" href="{{ '/research/' | relative_url }}" aria-label="More in Research">
     <div class="gle__rowlabel">Research</div>
     <div class="gle__rowbody">
       <p class="gle__text">My primary research agenda lies in health economics, closely connected to epidemiology, with a strong interest in development economics and how public policies can shape human societies.</p>
-      <a class="gle__more" href="{{ '/research/' | relative_url }}">More in Research &rarr;</a>
     </div>
-  </div>
+    {% include gle-seal.html label="Research" id="research" %}
+  </a>
 
-  <div class="gle__row">
+  <a class="gle__row gle__row--link" href="{{ '/talks/' | relative_url }}" aria-label="More in Talks">
     <div class="gle__rowlabel">Talks</div>
     <div class="gle__rowbody">
       {% assign upcoming = site.data.talks | where_exp: "t", "t.upcoming == true" %}
@@ -131,17 +142,17 @@ html, body{margin:0 !important;padding:0 !important;}
           <span class="gle__next-meta">{% if t.date %}{{ t.date }} &middot; {% endif %}{{ t.place }}</span>
         </div>
       {% endfor %}
-      <a class="gle__more" href="{{ '/talks/' | relative_url }}">More in Talks &rarr;</a>
     </div>
-  </div>
+    {% include gle-seal.html label="Talks" id="talks" %}
+  </a>
 
-  <div class="gle__row">
+  <a class="gle__row gle__row--link" href="{{ '/teaching/' | relative_url }}" aria-label="More in Teaching">
     <div class="gle__rowlabel">Teaching</div>
     <div class="gle__rowbody">
       <p class="gle__text">I teach courses ranging from core economics to more advanced topics closer to my research, including econometrics and health economics.</p>
-      <a class="gle__more" href="{{ '/teaching/' | relative_url }}">More in Teaching &rarr;</a>
     </div>
-  </div>
+    {% include gle-seal.html label="Teaching" id="teaching" %}
+  </a>
 
   <!-- Now block: slides cycled by a single "next" control (loops back to the first); the row label follows the current slide's data-label -->
   <div class="gle__row gle__row--now">
