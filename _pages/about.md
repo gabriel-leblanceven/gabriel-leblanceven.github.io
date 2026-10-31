@@ -40,6 +40,10 @@ layout: single
 .gle .gle__text{font-size:16px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
 .gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;text-decoration:none !important;}
 .gle__more:hover{color:#c8921a;text-decoration:none !important;}
+.gle__next{margin-top:14px;padding-left:12px;border-left:2px solid #c8921a;}
+.gle__next-label{display:block;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#c8921a;}
+.gle__next-title{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:500;color:#324f6b;line-height:1.3;margin-top:4px;}
+.gle__next-meta{display:block;font-size:13px;font-style:italic;color:#6a7078;margin-top:2px;}
 .gle__muted{color:#9aa3b0;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
@@ -102,7 +106,15 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Talks</div>
     <div class="gle__rowbody">
-      <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work. Further presentations are scheduled for the current year.</p>
+      {% assign upcoming = site.data.talks | where_exp: "t", "t.upcoming == true" %}
+      <p class="gle__text">This section lists the seminars, conferences and workshops where I have presented my work.{% if upcoming.size == 0 %} Further presentations are scheduled for the current year.{% endif %}</p>
+      {% for t in upcoming limit:2 %}
+        <div class="gle__next">
+          <span class="gle__next-label">Upcoming</span>
+          <span class="gle__next-title">{{ t.title }}</span>
+          <span class="gle__next-meta">{% if t.date %}{{ t.date }} &middot; {% endif %}{{ t.place }}</span>
+        </div>
+      {% endfor %}
       <a class="gle__more" href="{{ '/talks/' | relative_url }}">More in Talks &rarr;</a>
     </div>
   </div>
