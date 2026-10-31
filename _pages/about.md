@@ -28,6 +28,7 @@ layout: single
 .gle__kicker{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#c8921a;line-height:2;}
 .gle__herobody .gle__kicker:first-of-type{color:#324f6b;}
 .gle__name{font-family:'Newsreader',serif;font-size:42px;font-weight:400;letter-spacing:-0.005em;line-height:1.0;margin:14px 0 0;color:#324f6b;}
+.gle__pron{display:inline-block;margin-left:10px;font-family:'Public Sans',sans-serif;font-size:13px;font-weight:400;letter-spacing:0.02em;color:#8a9099;white-space:nowrap;vertical-align:baseline;}
 .gle__supervisor{font-size:14px;color:#6a7078;line-height:1.5;margin-top:8px;margin-bottom:16px;}
 .gle .gle__lede{font-size:16px;line-height:1.65;color:#2a2f36;max-width:560px;margin-top:0;text-align:justify;}
 .gle__links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
@@ -87,6 +88,7 @@ body{padding-top:0 !important;}
   .gle__photo{grid-row:1;width:112px;height:150px;min-height:0;object-position:center 15%;border:1px solid #E3E5E9;}
   .gle__herobody{display:contents;}
   .gle__name{grid-column:2;grid-row:1;align-self:center;margin:0;font-size:30px;}
+  .gle__pron{display:block;margin:8px 0 0;font-size:12px;}
   .gle__herobody > *:not(.gle__name){grid-column:1 / -1;}
   .gle__herobody > .gle__kicker:first-of-type{margin-top:20px !important;}
 }
@@ -108,7 +110,7 @@ html, body{margin:0 !important;padding:0 !important;}
   <div class="gle__hero">
     <img class="gle__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Gabriel Leblanc-Even">
     <div class="gle__herobody">
-      <h1 class="gle__name">Gabriel <span style="white-space:nowrap;">Leblanc-Even</span></h1>
+      <h1 class="gle__name">Gabriel <span style="white-space:nowrap;">Leblanc-Even</span> <span class="gle__pron" title="How to pronounce my name">gah-bree-EL luh-BLAHN ay-VAN</span></h1>
       <div class="gle__kicker" style="margin-top: 14px;">PhD Candidate in Economics</div>
       <div class="gle__kicker">CREM &middot; CNRS UMR 6211 &middot; University of Rennes</div>
       <div class="gle__supervisor">Supervised by Josselin Thuilliez (DR CNRS)</div>
