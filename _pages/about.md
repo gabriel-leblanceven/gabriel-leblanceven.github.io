@@ -165,7 +165,7 @@ html, body{margin:0 !important;padding:0 !important;}
           <p class="gle__text">If you've been wondering about the logo in the top-left corner: it is my personal monogram (GLE). As an art lover with a soft spot for Impressionism &mdash; and having previously worked at the Mus&eacute;e d'Orsay &mdash; I adapted it from Henri de Toulouse-Lautrec's iconic circular monogram. It is a small personal, historical touch on an otherwise academic website. And yes, it also doubles as a &ldquo;Home&rdquo; button!</p>
         </div>
         <div class="gle__slide" data-label="The Pronunciation" role="group" aria-roledescription="slide" aria-label="3 of 3">
-          <p class="gle__text">In case you were wondering how to say my name: Gabriel Leblanc-Even sounds like &ldquo;gah-bree-EL luh-BLAHN ay-VAN&rdquo;. The last part rhymes with the French word <strong>vin</strong> (wine), not with the English word &ldquo;even&rdquo;.</p>
+          <p class="gle__text">In case you were wondering how to say my name: Gabriel Leblanc-Even sounds like &ldquo;gah-bree-EL luh-BLAHN ay-VAN&rdquo;. The final part sounds like the French name &ldquo;&Eacute;vin&rdquo;, with the same nasal vowel as in vin (wine), rather than the English word &ldquo;even&rdquo;.</p>
         </div>
       </div>
       <div class="gle__nowctl">
