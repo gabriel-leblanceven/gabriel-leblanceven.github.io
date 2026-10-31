@@ -161,7 +161,8 @@ html, body{margin:0 !important;padding:0 !important;}
     <div class="gle__rowbody">
       <div class="gle__slides" id="gle-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Now and more">
         <div class="gle__slide" data-label="Now" role="group" aria-roledescription="slide" aria-label="1 of 3">
-          <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other. Curious about life outside research? A few of my hobbies are <a class="gle__inlink" href="{{ '/misc/' | relative_url }}">here</a>.</p>
+          <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
+          <p class="gle__text" style="margin-top:10px;">Curious about life outside research? <a class="gle__inlink" href="{{ '/misc/' | relative_url }}">Take a look at a few of my hobbies</a>.</p>
         </div>
         <div class="gle__slide" data-label="The Monogram" role="group" aria-roledescription="slide" aria-label="2 of 3">
           <p class="gle__text">If you've been wondering about the logo in the top-left corner: it is my personal monogram (GLE). As an art lover with a soft spot for Impressionism &mdash; and having previously worked at the Mus&eacute;e d'Orsay &mdash; I adapted it from Henri de Toulouse-Lautrec's iconic circular monogram. It is a small personal, historical touch on an otherwise academic website. And yes, it also doubles as a &ldquo;Home&rdquo; button!</p>
