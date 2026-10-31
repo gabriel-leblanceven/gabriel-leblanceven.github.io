@@ -61,35 +61,35 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Art</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I have a soft spot for Impressionism and previously worked at the Mus&eacute;e d'Orsay, which is also where the monogram of this site comes from.</p>
+      <p class="gle__text">I have a soft spot for Impressionism and previously worked at the Mus&eacute;e d'Orsay, which also inspired the monogram used on this website.</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Rowing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I row. Few things clear the mind like a session on the water.</p>
+      <p class="gle__text">I row. Few things clear the mind quite like time spent on the water.</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Drawing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I draw in my spare time.</p>
+      <p class="gle__text">I enjoy drawing in my spare time.</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Singing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I used to sing in a choir, a great lesson in listening to others.</p>
+      <p class="gle__text">I used to sing in a choir, which taught me a great deal about listening to others.</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Plants</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I am a houseplant enthusiast with a particular interest in plant tissue culture: growing new plants from a few cells in sterile conditions. Lab protocols, it turns out, are not only for economists.</p>
+      <p class="gle__text">I am an enthusiastic houseplant grower, with a particular interest in plant tissue culture: growing new plants from just a few cells under sterile conditions. Lab protocols, it turns out, are not just for economists.</p>
     </div>
   </div>
 
