@@ -36,6 +36,17 @@ layout: single
 .gle__row--now{border-bottom:1px solid #324f6b;background:rgba(200,146,26,0.06);}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowlabel--now{color:#c8921a;}
+.gle__row--now .gle__rowbody{min-width:0;}
+.gle__slides{display:flex;align-items:flex-start;transition:height .3s;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;outline:none;}
+.gle__slides::-webkit-scrollbar{display:none;}
+.gle__slide{flex:0 0 100%;scroll-snap-align:start;}
+.gle__slidenav{display:flex;align-items:center;gap:12px;margin-top:16px;}
+.gle__slidebtn{font-family:'Space Mono',monospace;font-size:12px;line-height:1;color:#324f6b;background:transparent;border:1px solid #324f6b;width:28px;height:28px;padding:0;cursor:pointer;}
+.gle__slidebtn:hover{background:#324f6b;color:#fff;}
+.gle__slidebtn:disabled{opacity:.3;cursor:default;background:transparent;color:#324f6b;}
+.gle__dots{display:flex;gap:8px;}
+.gle__dot{width:8px;height:8px;padding:0;border-radius:50%;border:1px solid #324f6b;background:transparent;cursor:pointer;}
+.gle__dot.is-active{background:#c8921a;border-color:#c8921a;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
 .gle .gle__text{font-size:16px;color:#2a2f36;line-height:1.65;max-width:620px;text-align:justify;}
 .gle__more{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;margin-top:18px;border-bottom:1px solid #c8921a;padding-bottom:2px;text-decoration:none !important;}
@@ -127,10 +138,23 @@ html, body{margin:0 !important;padding:0 !important;}
     </div>
   </div>
 
+  <!-- Now block: manual slides (arrows, dots, swipe); the row label follows the current slide's data-label -->
   <div class="gle__row gle__row--now">
-    <div class="gle__rowlabel gle__rowlabel--now">Now</div>
+    <div class="gle__rowlabel gle__rowlabel--now" id="gle-now-label">Now</div>
     <div class="gle__rowbody">
-      <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
+      <div class="gle__slides" id="gle-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Now and more">
+        <div class="gle__slide" data-label="Now" role="group" aria-roledescription="slide" aria-label="1 of 2">
+          <p class="gle__text">Mostly writing my dissertation and enjoying Brittany. One of these is more relaxing than the other.</p>
+        </div>
+        <div class="gle__slide" data-label="The logo" role="group" aria-roledescription="slide" aria-label="2 of 2">
+          <p class="gle__text">If you've been wondering about the logo in the top-left corner: it is my personal monogram (GLE). As an art lover with a soft spot for Impressionism &mdash; and having previously worked at the Mus&eacute;e d'Orsay &mdash; I adapted it from Henri de Toulouse-Lautrec's iconic circular monogram. It is a small personal, historical touch on an otherwise academic website. And yes, it also doubles as a &ldquo;Home&rdquo; button!</p>
+        </div>
+      </div>
+      <div class="gle__slidenav">
+        <button type="button" class="gle__slidebtn" id="gle-prev" aria-label="Previous">&larr;</button>
+        <span class="gle__dots" id="gle-dots"></span>
+        <button type="button" class="gle__slidebtn" id="gle-next" aria-label="Next">&rarr;</button>
+      </div>
     </div>
   </div>
 
@@ -139,3 +163,35 @@ html, body{margin:0 !important;padding:0 !important;}
     <span>Rennes, France &middot; &copy; {{ 'now' | date: "%Y" }}</span>
   </div>
 </div>
+
+<script>
+(function(){
+  var box = document.getElementById('gle-slides');
+  if (!box) return;
+  var slides = box.querySelectorAll('.gle__slide');
+  var label = document.getElementById('gle-now-label');
+  var dots = document.getElementById('gle-dots');
+  var prev = document.getElementById('gle-prev'), next = document.getElementById('gle-next');
+  for (var i = 0; i < slides.length; i++) {
+    var d = document.createElement('button');
+    d.type = 'button'; d.className = 'gle__dot'; d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.addEventListener('click', (function(k){ return function(){ go(k); }; })(i));
+    dots.appendChild(d);
+  }
+  function current(){ return Math.round(box.scrollLeft / box.clientWidth); }
+  function go(k){ k = Math.max(0, Math.min(slides.length - 1, k)); box.scrollTo({ left: k * box.clientWidth, behavior: 'smooth' }); }
+  function update(){
+    var k = current();
+    label.textContent = slides[k].getAttribute('data-label');
+    box.style.height = slides[k].offsetHeight + 'px';
+    for (var j = 0; j < dots.children.length; j++) dots.children[j].classList.toggle('is-active', j === k);
+    prev.disabled = k === 0; next.disabled = k === slides.length - 1;
+  }
+  prev.addEventListener('click', function(){ go(current() - 1); });
+  next.addEventListener('click', function(){ go(current() + 1); });
+  box.addEventListener('keydown', function(e){ if (e.key === 'ArrowLeft') go(current() - 1); if (e.key === 'ArrowRight') go(current() + 1); });
+  box.addEventListener('scroll', function(){ window.requestAnimationFrame(update); });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
