@@ -25,6 +25,13 @@ layout: single
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowbody{padding:20px 56px 24px 40px;}
+.gle__desc{margin-top:12px;}
+.gle__desc summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;padding-bottom:2px;}
+.gle__desc summary::-webkit-details-marker{display:none;}
+.gle__desc summary::after{content:"";width:5px;height:5px;border-right:1.4px solid currentColor;border-bottom:1.4px solid currentColor;transform:rotate(-45deg);transition:transform .2s;}
+.gle__desc[open] summary::after{transform:rotate(45deg) translate(-1px,-1px);}
+.gle__desc summary:hover{color:#c8921a;}
+.gle__desc-body{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:620px;text-align:justify;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
 @media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
 .page,.page__inner-wrap,#main,article.page{max-width:100% !important;width:100% !important;padding:0 !important;float:none !important;}
@@ -70,7 +77,12 @@ body{padding-top:0 !important;}
             <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
             <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:6px;">{{ c.level }} &middot; {{ c.role }}</div>
             <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#6a7078;margin-top:3px;">{{ c.institution }}</div>
-            <div style="font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:10px;max-width:620px;text-align:justify;">{{ c.description }}</div>
+            {% if c.description %}
+            <details class="gle__desc">
+              <summary>Course description</summary>
+              <div class="gle__desc-body">{{ c.description }}</div>
+            </details>
+            {% endif %}
           </div>
         {% endfor %}
       </div>
