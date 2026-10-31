@@ -25,12 +25,14 @@ layout: single
 .gle__row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid #E3E5E9;}
 .gle__rowlabel{padding:34px 0 34px 56px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9099;}
 .gle__rowbody{padding:20px 56px 24px 40px;}
-.gle__desc{margin-top:12px;}
-.gle__desc summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;padding-bottom:2px;}
+.gle__ctitle{font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;transition:color .2s;}
+.gle__desc summary{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;cursor:pointer;list-style:none;}
 .gle__desc summary::-webkit-details-marker{display:none;}
-.gle__desc summary::after{content:"";width:5px;height:5px;border-right:1.4px solid currentColor;border-bottom:1.4px solid currentColor;transform:rotate(-45deg);transition:transform .2s;}
-.gle__desc[open] summary::after{transform:rotate(45deg) translate(-1px,-1px);}
-.gle__desc summary:hover{color:#c8921a;}
+.gle__desc summary:focus-visible{outline:2px solid #c8921a;outline-offset:4px;}
+.gle__desc-chev{flex:0 0 auto;width:9px;height:9px;margin-top:8px;border-right:1.4px solid #324f6b;border-bottom:1.4px solid #324f6b;transform:rotate(45deg);transition:transform .2s,border-color .2s;}
+.gle__desc[open] .gle__desc-chev{transform:rotate(-135deg);margin-top:12px;}
+.gle__desc summary:hover .gle__ctitle{color:#c8921a;}
+.gle__desc summary:hover .gle__desc-chev{border-color:#c8921a;}
 .gle__desc-body{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:620px;text-align:justify;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
 @media(max-width:720px){.gle__titleband,.gle__row{grid-template-columns:1fr;}.gle__titlebody,.gle__rowbody{padding:20px 24px 24px;}.gle__rowlabel{padding:24px 0 0 24px;}.gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}.gle__h1{font-size:32px;}}
@@ -73,15 +75,19 @@ body{padding-top:0 !important;}
       <div class="gle__rowlabel">{{ grp.name }}</div>
       <div class="gle__rowbody">
         {% for c in grp.items %}
-          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDEEF1;">
-            <div style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#324f6b;line-height:1.3;">{{ c.title }}</div>
+          {% capture course_head %}
+            <div class="gle__ctitle">{{ c.title }}</div>
             <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#c8921a;margin-top:6px;">{{ c.level }} &middot; {{ c.role }}</div>
             <div style="font-family:'Public Sans',sans-serif;font-size:13px;font-style:italic;color:#6a7078;margin-top:3px;">{{ c.institution }}</div>
+          {% endcapture %}
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDEEF1;">
             {% if c.description %}
             <details class="gle__desc">
-              <summary>Course description</summary>
+              <summary><div>{{ course_head }}</div><span class="gle__desc-chev" aria-hidden="true"></span></summary>
               <div class="gle__desc-body">{{ c.description }}</div>
             </details>
+            {% else %}
+            {{ course_head }}
             {% endif %}
           </div>
         {% endfor %}
