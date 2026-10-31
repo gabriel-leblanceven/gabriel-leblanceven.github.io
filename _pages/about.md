@@ -44,7 +44,7 @@ layout: single
 .gle__nowdots{display:flex;gap:6px;}
 .gle__nowdots i{display:block;width:7px;height:7px;border-radius:50%;border:1px solid #324f6b;box-sizing:border-box;transition:background .2s,border-color .2s;}
 .gle__nowdots i.is-active{background:#c8921a;border-color:#c8921a;}
-.gle__slides{display:flex;align-items:flex-start;transition:height .3s;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;outline:none;}
+.gle__slides{display:flex;align-items:flex-start;transition:height .3s;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;outline:none;}
 .gle__slides::-webkit-scrollbar{display:none;}
 .gle__slide{flex:0 0 100%;scroll-snap-align:start;}
 .gle__rowbody{padding:32px 56px 34px 40px;}
@@ -208,8 +208,9 @@ html, body{margin:0 !important;padding:0 !important;}
   prev.addEventListener('click', function(){ go(idx - 1); });
   next.addEventListener('click', function(){ go(idx + 1); });
   box.addEventListener('keydown', function(e){ if (e.key === 'ArrowLeft') go(idx - 1); if (e.key === 'ArrowRight') go(idx + 1); });
-  box.addEventListener('scroll', function(){ clearTimeout(settle); settle = setTimeout(function(){ render(current()); }, 120); });
+  box.addEventListener('scroll', function(){ if (box.scrollTop) box.scrollTop = 0; clearTimeout(settle); settle = setTimeout(function(){ render(current()); }, 120); });
   window.addEventListener('resize', function(){ box.scrollLeft = idx * box.clientWidth; render(idx); });
   render(0);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ render(idx); });
 })();
 </script>
