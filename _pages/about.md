@@ -77,12 +77,17 @@ body{padding-top:0 !important;}
   .gle__row--link .gle__rowlabel{grid-column:1 / -1;}
   .gle__go{padding:0 20px 0 0;}
   .gle__hero,.gle__row{grid-template-columns:1fr;}
-  .gle__photo{height:260px;min-height:0;object-position:center 8%;border-right:none;border-bottom:1px solid #E3E5E9;}
   .gle__herobody,.gle__rowbody{padding:28px 24px;}
   .gle__rowlabel{padding:24px 0 0 24px;}
   .gle__nav,.gle__footer{padding-left:24px;padding-right:24px;}
   .gle__footer{flex-direction:column;gap:8px;align-items:flex-start;}
-  .gle__name{font-size:38px;}
+  /* Phone hero: small photo beside the name, the rest of the intro below at full width */
+  .gle__hero{grid-template-columns:112px 1fr;column-gap:16px;padding:24px 24px 28px;}
+  .gle__photo{grid-row:1;width:112px;height:150px;min-height:0;object-position:center 15%;border:1px solid #E3E5E9;}
+  .gle__herobody{display:contents;}
+  .gle__name{grid-column:2;grid-row:1;align-self:center;margin:0;font-size:30px;}
+  .gle__herobody > *:not(.gle__name){grid-column:1 / -1;}
+  .gle__herobody > .gle__kicker:first-of-type{margin-top:20px !important;}
 }
 html, body{margin:0 !important;padding:0 !important;}
 </style>
