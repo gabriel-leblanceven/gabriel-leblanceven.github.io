@@ -29,7 +29,14 @@ layout: single
 .gle__item:last-child{border-bottom:none;}
 .gle__ititle{font-family:'Newsreader',serif;font-size:21px;font-weight:500;line-height:1.3;color:#324f6b;}
 .gle__byline{font-family:'Public Sans',sans-serif;font-style:italic;font-size:13px;color:#c8921a;margin-top:6px;}
-.gle__abs{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:10px;max-width:640px;}
+.gle__abs{font-size:14.5px;color:#3a4048;line-height:1.6;margin-top:12px;max-width:640px;text-align:justify;}
+.gle__desc summary{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;cursor:pointer;list-style:none;}
+.gle__desc summary::-webkit-details-marker{display:none;}
+.gle__desc summary:focus-visible{outline:2px solid #c8921a;outline-offset:4px;}
+.gle__desc-chev{flex:0 0 auto;width:9px;height:9px;margin-top:8px;border-right:1.4px solid #324f6b;border-bottom:1.4px solid #324f6b;transform:rotate(45deg);transition:transform .2s,border-color .2s;}
+.gle__desc[open] .gle__desc-chev{transform:rotate(-135deg);margin-top:12px;}
+.gle__desc summary:hover .gle__desc-chev{border-color:#c8921a;}
+.gle__avail{font-family:'Public Sans',sans-serif;font-style:italic;font-size:13px;color:#6a7078;margin-top:10px;}
 .gle__pdf{display:inline-block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#324f6b;border-bottom:1px solid #c8921a;margin-top:12px;padding-bottom:1px;}
 .gle__pdf:hover{color:#c8921a;}
 .gle__footer{display:flex;align-items:center;justify-content:space-between;padding:20px 56px 40px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8a9099;border-top:1px solid #324f6b;}
@@ -77,10 +84,17 @@ body{padding-top:0 !important;}
         <div class="gle__rowbody">
           {% for p in group %}
             <div class="gle__item">
-              <div class="gle__ititle">{{ p.title }}</div>
-              <div class="gle__byline">{% if p.coauthors and p.coauthors != "" %}with {{ p.coauthors }}{% else %}Single-authored{% endif %}</div>
-              <div class="gle__abs">{{ p.abstract }}</div>
-              {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% elsif p.on_request %}<span class="gle__avail">Draft available upon request</span>{% endif %}
+              <details class="gle__desc">
+                <summary>
+                  <div>
+                    <div class="gle__ititle">{{ p.title }}</div>
+                    <div class="gle__byline">{% if p.coauthors and p.coauthors != "" %}with {{ p.coauthors }}{% else %}Single-authored{% endif %}</div>
+                  </div>
+                  <span class="gle__desc-chev" aria-hidden="true"></span>
+                </summary>
+                <div class="gle__abs">{{ p.abstract }}</div>
+                {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% elsif p.on_request %}<div class="gle__avail">Draft available upon request</div>{% endif %}
+              </details>
             </div>
           {% endfor %}
         </div>
