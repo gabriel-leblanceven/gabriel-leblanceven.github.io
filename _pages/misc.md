@@ -75,7 +75,7 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Drawing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I enjoy drawing in my spare time, and even take some courses at the &Eacute;cole des Beaux-Arts de Rennes (EESAB Rennes).</p>
+      <p class="gle__text">I enjoy drawing in my spare time and take weekly classes at the &Eacute;cole des Beaux-Arts de Rennes (EESAB Rennes).</p>
     </div>
   </div>
 
