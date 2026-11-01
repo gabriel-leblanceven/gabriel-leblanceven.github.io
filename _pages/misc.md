@@ -83,7 +83,7 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Plants</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I am an enthusiastic houseplant grower, with a particular interest in plant tissue culture: growing new plants from just a few cells under sterile conditions. Lab protocols, it turns out, are not just for economists.</p>
+      <p class="gle__text">I am an enthusiastic houseplant grower, with a particular interest in plant tissue culture: growing new plants from just a few cells under sterile conditions.</p>
     </div>
   </div>
 
