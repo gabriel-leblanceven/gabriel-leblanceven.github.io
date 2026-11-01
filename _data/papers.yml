@@ -8,7 +8,8 @@
   abstract: "Abstract 2 — single-authored work in progress."
   status: wip
 
-- title: "Intergenerational Health Persistence in the US"
+- title: "Intergenerational Health Persistence: How the Composition of the Parental Health Measure Shapes the Racial Gap"
   coauthors: ""
-  abstract: "Abstract 3 — a working paper with a circulated draft."
-  status: wip
+  abstract: "Studies of intergenerational health persistence typically average the health of both parents, and fall back on a single parent when only one is observed. Unlike household income, parental health has no accounting counterpart, so this fallback changes both what the parental measure captures and how precisely it does so. Using the PSID from 1984 to 2023, I replicate the rank-rank slope of Halliday, Mazumder and Wong (2021) and decompose the racial gap in health persistence within each group by type of parental measure. The father's health is observed for 82% of White children but only 47% of Black children, and in both groups the slope is lower when only one parent is measured. A Kitagawa decomposition shows that the composition of the observable parental measure accounts for 36 to 90% of the within-cell racial gap in slopes, depending on the reference group, although differences in within-cell slopes cannot be ruled out. Correcting for attenuation does not reduce this component. The racial gap in estimated health persistence therefore partly reflects how parental health is measured, not only how health is transmitted. Extending the analysis to childhood health and to persistence within a generation, I find that health persistence holds across measures, but that its magnitude varies with the measure."
+  status: working
+  on_request: true

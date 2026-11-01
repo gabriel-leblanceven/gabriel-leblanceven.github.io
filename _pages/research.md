@@ -80,7 +80,7 @@ body{padding-top:0 !important;}
               <div class="gle__ititle">{{ p.title }}</div>
               <div class="gle__byline">{% if p.coauthors and p.coauthors != "" %}with {{ p.coauthors }}{% else %}Single-authored{% endif %}</div>
               <div class="gle__abs">{{ p.abstract }}</div>
-              {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% endif %}
+              {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% elsif p.on_request %}<span class="gle__avail">Draft available upon request</span>{% endif %}
             </div>
           {% endfor %}
         </div>
