@@ -65,7 +65,7 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Download</div>
     <div class="gle__rowbody">
-      <a class="gle__btn" href="{{ '/files/cv.pdf' | relative_url }}">Download full CV (PDF) &darr;</a>
+      <a class="gle__btn" href="{{ '/files/cv.pdf' | relative_url }}" target="_blank" rel="noopener">Download full CV (PDF) &darr;</a>
     </div>
   </div>
 
