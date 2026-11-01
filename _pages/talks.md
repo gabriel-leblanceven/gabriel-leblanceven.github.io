@@ -1,6 +1,6 @@
 ---
 permalink: /talks/
-title: ""
+title: "Talks"
 author_profile: false
 hide_masthead: true
 classes: wide

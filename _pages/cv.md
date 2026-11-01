@@ -1,6 +1,6 @@
 ---
 permalink: /cv/
-title: ""
+title: "CV"
 author_profile: false
 hide_masthead: true
 classes: wide
