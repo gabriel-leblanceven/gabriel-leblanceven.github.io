@@ -117,6 +117,8 @@ html, body{margin:0 !important;padding:0 !important;}
         <a class="gle__btn" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="gle__btn" href="mailto:gabriel.leblanc-even@univ-rennes.fr">Email</a>
         <a class="gle__btn" href="https://www.linkedin.com/in/gleblanceven/">LinkedIn</a>
+        <!-- Google Scholar: hidden until author.googlescholar is filled in _config.yml -->
+        {% if site.author.googlescholar %}<a class="gle__btn" href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
         <a class="gle__btn" href="https://github.com/gabriel-leblanceven">GitHub</a>
       </div>
     </div>
