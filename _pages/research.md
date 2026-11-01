@@ -84,18 +84,23 @@ body{padding-top:0 !important;}
         <div class="gle__rowbody">
           {% for p in group %}
             <div class="gle__item">
+              {% capture paper_head %}
+                <div class="gle__ititle">{{ p.title }}</div>
+                <div class="gle__byline">{% if p.coauthors and p.coauthors != "" %}with {{ p.coauthors }}{% else %}Single-authored{% endif %}</div>
+              {% endcapture %}
+              {% if p.abstract %}
               <details class="gle__desc">
                 <summary>
-                  <div>
-                    <div class="gle__ititle">{{ p.title }}</div>
-                    <div class="gle__byline">{% if p.coauthors and p.coauthors != "" %}with {{ p.coauthors }}{% else %}Single-authored{% endif %}</div>
-                  </div>
+                  <div>{{ paper_head }}</div>
                   <span class="gle__desc-chev" aria-hidden="true"></span>
                 </summary>
                 <div class="gle__abs">{{ p.abstract }}</div>
                 {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% elsif p.on_request %}<div class="gle__avail">Draft available upon request</div>{% endif %}
                 {% if p.note %}<div class="gle__avail">{{ p.note }}</div>{% endif %}
               </details>
+              {% else %}
+              {{ paper_head }}
+              {% endif %}
             </div>
           {% endfor %}
         </div>
