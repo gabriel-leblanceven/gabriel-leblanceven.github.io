@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Home"
 excerpt: ""
 author_profile: false
 hide_masthead: true
