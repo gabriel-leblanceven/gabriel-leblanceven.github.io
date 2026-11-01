@@ -68,21 +68,21 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Rowing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I row. Few things clear the mind quite like time spent on the water.</p>
+      <p class="gle__text">I row at the Soci&eacute;t&eacute; des R&eacute;gates Rennaises. Few things clear the mind quite like time spent on the water.</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Drawing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I enjoy drawing in my spare time.</p>
+      <p class="gle__text">I enjoy drawing in my spare time, and even take some courses at the &Eacute;cole des Beaux-Arts de Rennes (EESAB Rennes).</p>
     </div>
   </div>
 
   <div class="gle__row">
     <div class="gle__rowlabel">Singing</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I used to sing in a choir, which taught me a great deal about listening to others.</p>
+      <p class="gle__text">I used to sing in the Paris Boys Choir, which taught me a great deal about listening to others.</p>
     </div>
   </div>
 
