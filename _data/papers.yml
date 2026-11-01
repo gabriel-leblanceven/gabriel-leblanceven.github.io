@@ -5,8 +5,9 @@
 
 - title: "The Long-Term Effects of Heavy Pollution: the Case of Chlordecone in the French West Indies"
   coauthors: "Josselin Thuilliez"
-  abstract: "Abstract 2 — single-authored work in progress."
+  abstract: "Chlordecone, a persistent organochlorine insecticide, was used in the banana plantations of Guadeloupe and Martinique from 1972 to 1993 and remains in their soils for centuries. We estimate its long-run effect on all-cause mortality in the general population. We combine exhaustive death records (1970–2021) for individuals born between 1890 and 2021 with a historical measure of each municipality's banana-growing area in 1969, before the pesticide was introduced, as a proxy for soil contamination. This lets us exploit variation in pollution intensity across municipalities, in the timing of exposure and in age at exposure. Survival and Cox models point to excess mortality among individuals born in the most contaminated municipalities, concentrated in cohorts of working age when chlordecone was introduced. A difference-in-differences design finds no divergence before 1988, and about 3 additional deaths per 1,000 per year among those aged 70–74 thereafter for a one-standard-deviation increase in the pollution proxy. This timing is consistent with the long biological latency documented in epidemiology."
   status: wip
+  note: "Preliminary and subject to change, please do not cite or circulate."
 
 - title: "Intergenerational Health Persistence: How the Composition of the Parental Health Measure Shapes the Racial Gap"
   coauthors: ""

@@ -94,6 +94,7 @@ body{padding-top:0 !important;}
                 </summary>
                 <div class="gle__abs">{{ p.abstract }}</div>
                 {% if p.pdf %}<a class="gle__pdf" href="{{ p.pdf | relative_url }}">Draft / PDF &darr;</a>{% elsif p.on_request %}<div class="gle__avail">Draft available upon request</div>{% endif %}
+                {% if p.note %}<div class="gle__avail">{{ p.note }}</div>{% endif %}
               </details>
             </div>
           {% endfor %}
