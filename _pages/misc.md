@@ -61,21 +61,15 @@ body{padding-top:0 !important;}
   <div class="gle__row">
     <div class="gle__rowlabel">Art</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I have a soft spot for Impressionism and previously worked at the Mus&eacute;e d'Orsay, which also inspired the monogram used on this website.</p>
+      <p class="gle__text">I have a soft spot for Impressionism and previously worked at the Mus&eacute;e d'Orsay, which also inspired the monogram used on this website. I also enjoy drawing and take weekly classes at the &Eacute;cole des Beaux-Arts de Rennes (EESAB Rennes).</p>
     </div>
   </div>
 
   <div class="gle__row">
-    <div class="gle__rowlabel">Rowing</div>
+    <div class="gle__rowlabel">Water sports</div>
     <div class="gle__rowbody">
-      <p class="gle__text">I row at the Soci&eacute;t&eacute; des R&eacute;gates Rennaises. Few things clear the mind quite like time spent on the water.</p>
-    </div>
-  </div>
-
-  <div class="gle__row">
-    <div class="gle__rowlabel">Drawing</div>
-    <div class="gle__rowbody">
-      <p class="gle__text">I enjoy drawing in my spare time and take weekly classes at the &Eacute;cole des Beaux-Arts de Rennes (EESAB Rennes).</p>
+      <p class="gle__text">I love being on the water and have a real fondness for water sports. I have been sailing for several years and even took part in sailing competitions during my business school years.</p>
+      <p class="gle__text" style="margin-top:10px;">Today, I still enjoy water sports and row at the Soci&eacute;t&eacute; des R&eacute;gates Rennaises.</p>
     </div>
   </div>
 
