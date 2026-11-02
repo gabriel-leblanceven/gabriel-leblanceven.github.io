@@ -91,6 +91,8 @@ body{padding-top:0 !important;}
   .gle__name{grid-column:2;grid-row:1;align-self:center;margin:0;font-size:30px;}  .gle__herobody > *:not(.gle__name){grid-column:1 / -1;}
   .gle__herobody > .gle__kicker:first-of-type{margin-top:20px !important;}
 }
+/* Very narrow phones: "Leblanc-Even" must fit beside the photo */
+@media (max-width:359px){.gle__name{font-size:25px;}}
 html, body{margin:0 !important;padding:0 !important;}
 </style>
 
