@@ -107,7 +107,7 @@ body{padding-top:0 !important;}
       <div style="display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:baseline;">
         <div style="font-family:'Space Mono',monospace;font-size:13px;color:#c8921a;font-weight:700;">2024–2027</div>
         <div>
-          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">Doctoral fellowship</div>
+          <div style="font-family:'Newsreader',serif;font-size:18px;font-weight:500;color:#324f6b;">PhD Fellowship</div>
           <div style="font-family:'Public Sans',sans-serif;font-size:13px;color:#6a7078;margin-top:3px;font-style:italic;">University of Rennes</div>
         </div>
       </div>
